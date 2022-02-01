@@ -1,0 +1,550 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+@import url('https://fonts.googleapis.com/css?family=Dancing+Script:400,500,600,700&display=swap');
+
+/*---------------------------- Base ----------------------------*/
+html {
+    scroll-behavior:smooth;
+    width:100%;
+}
+
+body {
+    margin:0;
+    top:0;
+    width:100%;
+}
+
+section {
+    max-width:1200px;
+    width:80%;
+    margin-left:auto;
+    margin-right:auto;
+}
+
+h1 {
+	line-height:30px;
+    font-family:'Dancing Script';
+	font-size:32px;
+	color:white;
+}
+
+h2 {
+    font-size:28px;
+    color:white;
+}
+
+p {
+    font-size:20px;
+}
+
+/*---------------------------- Header / Footer ----------------------------*/
+
+header {
+    position:fixed;
+    height:100px;
+    width:100%;
+    top:0;
+    z-index:5;
+    background-color:#E8E8E8;
+}
+
+footer {
+    display:flex;
+  	justify-content:space-around;
+    width:100%;
+	height:100px;
+	background-color:#E8E8E8;
+}
+
+/*Conteneur des boutons + caractéristiques des boutons du header / footer*/
+
+#h-content, #h-content2, #f-content {
+    display:flex;
+    flex-direction:row;
+    max-width:90%;
+    width:100%;
+    margin-left:auto;
+    margin-right:auto;
+    background-color:#E8E8E8;
+}
+
+.h-items, #h-items2, .f-items {
+	display:flex;
+	align-items:center;
+  	justify-content:center;
+    text-align:center;
+    width:100%;
+    text-decoration:none;
+    font-family:'Roboto';
+    font-weight:bold;
+    font-size:20px;
+    color:#1a1a1a;
+}
+
+.h-items, #h-items2 {
+    line-height:100px;
+
+    filter:drop-shadow(0 2mm 0.5mm grey);
+    transition:0.08s ease-in;
+    -webkit-transition:0.08s ease-in;
+}
+
+.f-items {
+    flex-direction:column;
+}
+
+/*Effets d'animation sur les boutons du header*/
+
+.h-items:hover, #h-items2:hover{
+    color:#E8E8E8;
+}
+
+.h-items:before, #h-items2:before{
+    content:"";
+    position:absolute;
+    bottom:0;
+    left:0;
+    right:0;
+    top:100%;
+    z-index:-1;
+    background:#1a1a1a;
+
+    transition:0.09s ease-in;
+    -webkit-transition:top 0.09s ease-in;
+}
+
+.h-items:hover:before, #h-items2:hover:before {
+    top:0;
+}
+
+/*Bouton affiché/non-affiché dans le header (au bout d'une certaine taille)*/
+
+#h-show {
+    display:none;
+    float:left;
+    width:80px;
+	height:80px;
+    margin-left:10px;
+	margin-top:10px;
+    border:1px solid #b1b1b1;
+    border-radius:50px;
+	background-image:url("menu_icon.png");
+    background-color:#b1b1b1;
+	background-repeat:no-repeat;
+	background-size:48px 48px;
+	background-position:center;
+    filter:drop-shadow(0 1mm 0.5mm grey);
+}
+
+#h-show:hover {
+	cursor:pointer;
+    border:1px solid #141414;
+    background-color:#141414;
+    transition: 0.2s ease-in;
+}
+
+#h-hide {
+	display:none;
+	width:100%;
+	height:50px;
+	line-height:50px;
+	text-align:center;
+	font-size:20px;
+    color:#D6D001;
+}
+
+#h-hide:hover {
+	cursor:pointer;
+}
+
+/*---------------------------- Ancrage ----------------------------*/
+
+#second-anchor, #third-anchor {
+    padding-top:100px;
+}
+
+/*---------------------------- Contenu première page ----------------------------*/
+
+/*Décalage par rapport au header*/
+
+#index-section {
+	margin-top:100px;
+    max-width:none;
+	width:100%;
+}
+
+/*Conteneur de la première page*/
+
+.container-1, #container-mlegales {
+    display:flex;
+	justify-content:center;
+    position:relative;
+    height:auto;
+    margin-left:auto;
+    margin-right:auto;
+    width:100%;
+    background-size:cover;
+    background-color:#1a1a1a;
+}
+
+/*Ensemble des éléments du conteneur de la première page*/
+
+#all-content, #pos-content {
+    display:flex;
+    position:initial;
+    justify-content:space-around;
+    flex-direction:column;
+    margin-top:100px;
+    margin-bottom:275px;
+    max-width:900px;
+    width:80%;
+}
+
+/*Element principal*/
+
+#main-content, #content-mlegales {
+    margin-bottom:100px;
+    padding:30px;
+    font-family:'Dancing Script';
+    backdrop-filter: blur(10px);
+}
+
+#main-content {
+    border-radius:20px;
+    text-align:center;
+    background-color:#0C0B0B;
+}
+
+#main-title {
+    font-size:35px;
+}
+
+#p-styles1 {
+    font-weight:bold;
+    font-size:25px;
+    color:#ff3434;
+}
+
+/*Elements secondaires (contact)*/
+
+#pos-contact-container {
+    display:inline-flex;
+    justify-content:space-between;
+}
+
+.contact-container {
+    width:30%;
+    border-radius:40px;
+    text-align:center;
+    font-family:'Roboto';
+    background-color:#0C0B0B;
+}
+
+.contact-text {
+    padding-left:5px;
+    padding-right:5px;
+}
+
+.p-styles2 {
+    color:red;
+}
+
+#github {
+    text-decoration:none;
+}
+
+#github2:hover {
+    color:#ff7d7d;
+    transition:0.3s ease-in-out;
+}
+
+/*---------------------------- Contenu deuxième / troisième page ----------------------------*/
+
+/*Conteneur de la deuxième page*/
+
+.container-2, .container-3 {
+    display:flex;
+    position:relative;
+    justify-content:center;
+    background-size:cover;
+}
+
+.container-2 {
+    background-color:#1f1f1f;
+}
+
+.container-3 {
+    background-color:#252525;
+}
+
+/*Ensemble des éléments du conteneur de la deuxième/troisième page
++ éléments constituant le formulaire*/
+
+#all-content-2, #all-content-3 {
+    margin-left:auto;
+    margin-right:auto;
+    max-width:900px;
+    width:80%;
+    text-align:justify;
+    font-weight:bold;
+}
+
+#all-content-3, .champs, #last-champ, #souscrire {
+    display:flex;
+	align-items:center;
+  	justify-content:center;
+  	flex-direction:column;
+}
+
+#first-pos-title {
+    margin-bottom:100px;
+}
+
+/*Element contenant le texte + la barre verticale + le bouton télécharger
++ caractériques du formulaire*/
+
+.v-bar {
+    display:inline-block;
+    height:auto;
+    border-left:4px solid #E8E8E8;
+    border-radius:2px;
+}
+
+.pos-titles {
+    margin-top:75px;
+    margin-bottom:100px;
+}
+
+.p-styles3 {
+    margin-bottom:50px;
+    padding-left:20px;
+    font-family:'Roboto';
+    color:orange;
+}
+
+#me-contacter {
+    color:#FFD88C;
+}
+
+#me-contacter:hover {
+    color:#ffefd0;
+    transition:0.5s ease-in-out;
+}
+
+#button-download {
+    display:block;
+    margin-left:auto;
+    margin-right:auto;
+	margin-top:30px;
+    margin-bottom:20px;
+    padding:20px 40px;
+    width:40%;
+    border:none;
+    border-radius:10px;
+    line-height:25px;
+    text-align:center;
+    font-family:'Corbel';
+    font-size:20px;
+    font-weight:bold;
+    text-decoration:none;
+    background-color:#E8E8E8;
+    color:#1a1a1a;
+}    
+
+#button-download:hover {
+    background-color:#797979;
+    color:#E8E8E8;
+    transition: 0.5s ease-in-out;
+}
+
+#form-contact {
+    margin-top:40px;
+    margin-bottom:100px;
+    padding:10px;
+    max-width:800px;
+    width:90%;
+    border-radius:5px;
+    border:3px solid orange;
+    background-color:#1f1f1f;
+}
+
+.champs, #last-champ, #souscrire {
+    margin-left:auto;
+    margin-right:auto;
+    font-weight:bold;
+    font-family:'Roboto';
+}
+
+.champs, #last-champ {
+    margin-bottom:50px;
+    width:90%;
+    border-radius:5px;
+    text-align:justify;
+}
+
+.champs {
+    padding-bottom:30px;
+    height:auto;
+    border:3px solid purple;
+    background-color:#494949;
+}
+
+#last-champ {
+    resize:none;
+    padding-bottom:100px;
+    border:3px solid #75009c;
+    background-color:#616161;
+}
+
+#souscrire {
+    padding:20px 40px;
+    border-radius:10px;
+    border:2px solid #E8E8E8;
+    font-size:20px;
+    background-color:#0C0B0B;
+    color:#E8E8E8;
+}
+
+.champs:hover, .champs:focus, #last-champ:hover, #last-champ:focus {
+    border:3px solid #ff00ff;
+    transition:0.5s ease-in-out;
+}
+
+#souscrire:hover {
+    border:3px solid #0C0B0B;
+    background-color:white;
+    color:#0C0B0B;
+    transition:0.5s ease-in-out;
+}
+
+::placeholder{
+    color:white;
+    font-size:15px;
+}
+
+/*---------------------------- Contenu page mentions légales ----------------------------*/
+
+#content-mlegales {
+    border-radius:80px;
+    border:4px solid #FB0000;
+    background-color:black;
+}
+
+#title-mlegales {
+    margin-bottom:50px;
+    text-align:center;
+    color:red;
+}
+
+.p-styles4 {
+    padding-left:20px;
+    font-family:'Roboto';
+    font-weight:bold;
+    color:#b30000;
+}
+
+#les-cigales {
+    color:#ee0000;
+}
+
+#les-cigales:hover {
+    color:#ff3737;
+    transition:0.3s ease-in-out;
+}
+
+/*------------------------------- Scrollbar ------------------------------------*/
+
+::-webkit-scrollbar {
+    width:15px;
+}
+
+::-webkit-scrollbar-thumb {
+    border-radius:5px;
+    border:31px none #ffffff;
+    background:#940000;
+}
+
+::-webkit-scrollbar-thumb:active {
+    background:#b40000;
+}
+
+::-webkit-scrollbar-track {
+    background:#1f1f1f;
+}
+
+::-webkit-scrollbar-corner {
+    background:transparent;
+}
+
+/*------------------------------- Responsive ------------------------------------*/
+
+@media (max-width: 1400px) { /*Premier décalage du header*/
+    #container-1, #container-2{
+        width:100%;
+		padding-bottom:100px;
+		padding-top:50px;      
+    }
+
+    #h-content {
+        display:none;
+        flex-direction:column;
+        float:left;
+        height:auto;
+		max-width:400px;
+        width:100%;
+    } 
+
+    .h-items {
+        display:flex;
+        align-items:center;
+        justify-content:center;
+        margin-left:auto;
+		margin-right:auto;
+        width:100%;
+		line-height:30px;
+        font-size:15px;
+    }
+
+    #h-show, #h-hide {
+		display:block;
+	}
+}
+
+@media (max-width: 1070px) { /*Premier décalage du header*/
+
+    h1, #main-title {
+        font-size:24px;
+    }
+
+    h2, #button-download, #p-styles1, #souscrire {
+        font-size:18px;
+    }
+
+    p, .f-items, .p-styles2 {
+        font-size:14px;
+    }
+
+    #all-content {
+        margin-bottom:400px;
+    }
+
+    #pos-contact-container {
+        display:flex;
+        flex-wrap:wrap;
+        justify-content:center;
+    }
+
+    .contact-container {
+        margin-top:5px;
+        margin-inline:10px;
+        max-width:200px;
+        width:100%;
+    }
+}
+
+@media (max-width: 400px) {
+
+    #all-content {
+        margin-bottom:100px;
+    }
+}

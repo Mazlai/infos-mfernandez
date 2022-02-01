@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="mobile-web-app-capable" content="yes">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Site web - FERNANDEZ Mickael</title>
+        <link rel="stylesheet" href="style.css">
+        <script src="script.js"></script>
+
+    </head>
+
+    <body>
+
+        <header>
+            <div id="h-content">
+                <a href="#top" class="h-items">               
+                        Accueil
+                </a>
+                <a href="#second-anchor" class="h-items">                     
+                        CV / Projets professionnel / Centres d'int&#233;r&#234;ts
+                </a>
+                <a href="#third-anchor" class="h-items">                     
+                    Me contacter
+                </a>
+                <div id="h-hide" onclick="hide_header();">X</div>
+            </div> 
+            <div id="h-show" onclick="show_header();">
+            </div> 
+        </header>
+        
+        <section id="index-section">
+            <article class="container-1">
+                <div id="all-content">
+                    <div id="main-content">
+                        <h1 id="main-title">Bienvenue sur le site personnel de Mickael FERNANDEZ</h1>
+                        <hr>
+                        <p id="p-styles1">Vous trouverez des informations relatives sur ma personnalit&#233; telles que mon CV, mon projet professionnel ou encore mes centres d'int&#233;r&#234;ts.</p>
+                    </div>
+
+                    <div id="pos-contact-container"> 
+                        <div class="contact-container">
+                            <div class="contact-text">                          
+                                <h2>Mail</h2>
+                                <p class="p-styles2">micky31200@gmail.com</p>
+                            </div>
+                        </div>   
+                        <div class="contact-container">
+                            <div class="contact-text">
+                                <h2>T&#233;l&#233;phone</h2>
+                                <p class="p-styles2">06 95 16 28 56</p>
+                            </div>
+                        </div>
+                        <div class="contact-container" id="container-github">
+                            <div class="contact-text">
+                                <a href="https://github.com/Micky31200" id="github"><h2 id="github2">GitHub</h2></a>
+                                <p class="p-styles2">Micky31200</p>
+                            </div>
+                        </div>   
+                    </div>
+                </div>
+            </article>    
+
+            <article class="container-2" id="second-anchor">
+                <div id="all-content-2">
+                    <h1 id="first-pos-title">&#10148; Mon CV</h1>
+                    <div class="v-bar">
+                        <p class="p-styles3">Pour me pr&#233;senter, je suis Mickael FERNANDEZ, j’ai 18 ans et je r&#233;alise un BUT - Informatique &#224; l’IUT de Blagnac.</p>
+                        <p class="p-styles3">&#201;tant int&#233;ress&#233; par le fonctionnement et la r&#233;alisation du codage dans le d&#233;veloppement web, quand on construit un site au fur et &#224; mesure, cela s’av&#232;re &#234;tre une passion que j’&#233;prouve particuli&#232;rement. Pour plus d’informations, vous pouvez toujours me <a href="#third-anchor" id="me-contacter">contacter</a> ou bien regarder mon CV.</p>
+                        <a href="Mickael-Fernandez.pdf" id="button-download" target="_blank" download>T&#233;l&#233;charger le CV en format PDF</a>
+                    </div>
+                    <h1 class="pos-titles">&#10148; Mon projet professionnel</h1>
+                    <div class="v-bar">
+                        <p class="p-styles3">&#192; l’heure actuelle, ayant quelques connaissances et comp&#233;tences dans le domaine du d&#233;veloppement web, j’aurai pour ambition de devenir webdesigner ou bien d&#233;veloppeur de site internet comprenant le côt&#233; serveur de l’application dans une bonne entreprise.</p>
+                    </div>
+                    <h1 class="pos-titles">&#10148; Mes centres d'int&#233;r&#234;ts</h1>
+                    <div class="v-bar">
+                        <p class="p-styles3">J’&#233;prouve une grande passion pour les jeux-vid&#233;os (FPS, Aventure...) car il s’agit de mon passe-temps pr&#233;f&#233;r&#233;. J’aime &#233;galement regarder du sport tels que le rugby (Stade Toulousain), le tennis ou bien encore la F1.</p>
+                        <p class="p-styles3">Dans le domaine professionnel, c’est l’informatique qui constitue mon centre d’int&#233;r&#234;t principal puisque j’aime imaginer, concevoir et r&#233;aliser de nouvelles choses, notamment dans le c&#244;t&#233; front-end (HTML-CSS).</p>
+                    </div>
+                    <h1 class="pos-titles">&#8205;</h1>
+                </div>
+            </article>
+
+            <article class="container-3" id="third-anchor">
+                <div id="all-content-3">
+                    <form id="form-contact" method="POST" action="index.html">
+                        <h1>&#10148; Contactez-moi</h1>
+                        <hr>
+                            <br>
+                            <input name="nom" type="text" class="champs" placeholder="Votre nom">
+                            <br>
+                            <input name="adresse" type="text" class="champs" placeholder="Votre adresse">
+                            <br>
+                            <input name="telephone" type="text" class="champs" placeholder="Votre t&#233;l&#233;phone">
+                            <br>
+                            <textarea id="last-champ" name="commentaire" placeholder="Votre commentaire :"></textarea>
+                            <br>
+                            <input type="submit" id="souscrire" value="Envoyer" onclick="window.location.href='index.html';"/>
+                    </form>
+                </div>
+            </article>
+
+        </section>
+
+        <footer>
+            <div id="f-content">
+                    <a href="mentions_page.html" class="f-items">R&#233;alis&#233; par Mickael FERNANDEZ - Mentions l&#233;gales</a>
+            </div>
+        </footer>
+
+    </body>
+
+</html>
