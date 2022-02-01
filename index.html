@@ -86,17 +86,17 @@
 
             <article class="container-3" id="third-anchor">
                 <div id="all-content-3">
-                    <form id="form-contact" method="POST" action="index.html">
+                    <form id="form-contact" method="GET" action="index.html">
                         <h1>&#10148; Contactez-moi</h1>
                         <hr>
                             <br>
-                            <input name="nom" type="text" class="champs" placeholder="Votre nom">
+                            <input name="nom" type="text" class="champs" autocomplete="off" placeholder="Votre nom" required minlength="2">
                             <br>
-                            <input name="adresse" type="text" class="champs" placeholder="Votre adresse">
+                            <input name="adresse" type="text" class="champs" autocomplete="off" placeholder="Votre adresse" required minlength="5">
                             <br>
-                            <input name="telephone" type="text" class="champs" placeholder="Votre t&#233;l&#233;phone">
+                            <input name="telephone" type="text" class="champs" autocomplete="off" placeholder="Votre t&#233;l&#233;phone" required minlength="10" maxlength="10">
                             <br>
-                            <textarea id="last-champ" name="commentaire" placeholder="Votre commentaire :"></textarea>
+                            <textarea id="last-champ" name="commentaire" autocomplete="off" placeholder="Votre commentaire :" required maxlength="400"></textarea>
                             <br>
                             <input type="submit" id="souscrire" value="Envoyer" onclick="window.location.href='index.html';"/>
                     </form>
