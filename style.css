@@ -221,7 +221,7 @@ footer {
 
 #p-styles1 {
     font-weight:bold;
-    font-size:25px;
+    font-family:'Roboto';
     color:#ff3434;
 }
 
@@ -364,7 +364,7 @@ footer {
     max-width:800px;
     width:90%;
     border-radius:5px;
-    border:3px solid orange;
+    border:3px solid rgb(219, 128, 255);
     background-color:#1f1f1f;
 }
 
@@ -405,8 +405,41 @@ footer {
     color:#E8E8E8;
 }
 
-.champs:hover, .champs:focus, #last-champ:hover, #last-champ:focus {
+.champs::placeholder {
+    background-color:#494949;
+}
+
+#last-champ::placeholder {
+    background-color:#616161;
+}
+
+.champs:hover, .champs:hover::placeholder {
+    background-color:#E8E8E8;
+    transition:0.5s ease-in-out;
+}
+
+.champs:hover {
     border:3px solid #ff00ff;
+}
+
+.champs:hover::placeholder, .champs:focus, .champs:focus::placeholder {
+    color:#494949;
+    background-color:#E8E8E8;
+    transition:0.5s ease-in-out;
+}
+
+#last-champ:hover, #last-champ:hover::placeholder {
+    background-color:#E8E8E8;
+    transition:0.5s ease-in-out;
+}
+
+#last-champ:hover {
+    border:3px solid #fc75fc;
+}
+
+#last-champ:hover::placeholder, #last-champ:focus, #last-champ:focus::placeholder {
+    color:#616161;
+    background-color:#E8E8E8;
     transition:0.5s ease-in-out;
 }
 
@@ -426,29 +459,29 @@ footer {
 
 #content-mlegales {
     border-radius:80px;
-    border:4px solid #FB0000;
+    border:4px solid #74009e;
     background-color:black;
 }
 
 #title-mlegales {
     margin-bottom:50px;
     text-align:center;
-    color:red;
+    color:rgb(225, 149, 255);
 }
 
 .p-styles4 {
     padding-left:20px;
     font-family:'Roboto';
     font-weight:bold;
-    color:#b30000;
+    color:rgb(93, 0, 146);
 }
 
 #github-ml {
-    color:#ee0000;
+    color:rgb(132, 0, 209);
 }
 
 #github-ml:hover {
-    color:#ff3737;
+    color:rgb(162, 0, 255);
     transition:0.3s ease-in-out;
 }
 
