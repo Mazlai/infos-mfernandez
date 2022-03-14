@@ -413,13 +413,12 @@ footer {
     background-color:#616161;
 }
 
-.champs:hover, .champs:hover::placeholder {
-    background-color:#E8E8E8;
-    transition:0.5s ease-in-out;
-}
-
 .champs:hover {
     border:3px solid #ff00ff;
+}
+
+#last-champ:hover {
+    border:3px solid #fc75fc;
 }
 
 .champs:hover::placeholder, .champs:focus, .champs:focus::placeholder {
@@ -428,13 +427,9 @@ footer {
     transition:0.5s ease-in-out;
 }
 
-#last-champ:hover, #last-champ:hover::placeholder {
+.champs:hover, .champs:hover::placeholder, #last-champ:hover, #last-champ:hover::placeholder {
     background-color:#E8E8E8;
     transition:0.5s ease-in-out;
-}
-
-#last-champ:hover {
-    border:3px solid #fc75fc;
 }
 
 #last-champ:hover::placeholder, #last-champ:focus, #last-champ:focus::placeholder {
