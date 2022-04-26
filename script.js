@@ -8,7 +8,6 @@ function hide_header() {
 }
 
 function send_mail(params) {
-
 	var tempParams = {
 		from_name:document.getElementById('from-name').value,
 		user_email:document.getElementById('user-email').value,
