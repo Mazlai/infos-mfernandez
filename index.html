@@ -9,6 +9,11 @@
         <title>Site web - FERNANDEZ Mickael</title>
         <link rel="stylesheet" href="style.css">
         <script src="script.js"></script>
+        <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+        
+        (function() {
+            emailjs.init('user_0b6nRDdjPkBqPvFM4');
+        })();
 
     </head>
 
@@ -80,19 +85,19 @@
 
             <article class="container-3" id="third-anchor">
                 <div id="all-content-3">
-                    <form id="form-contact" method="POST" action="index.html">
+                    <form id="form-contact" method="POST">
                         <h1>&#10148; Contactez-moi</h1>
                         <hr>
                             <br>
-                            <input name="nom" type="text" class="champs" autocomplete="off" placeholder="Votre nom :" required minlength="2">
+                            <input id="from-name" name="nom" type="text" class="champs" autocomplete="off" placeholder="Votre nom :" required minlength="2">
                             <br>
-                            <input name="adresse" type="text" class="champs" autocomplete="off" placeholder="Votre adresse :" required minlength="5">
+                            <input id="user-email" name="adresse" type="text" class="champs" autocomplete="off" placeholder="Votre adresse :" required minlength="5">
                             <br>
-                            <input name="sujet" type="text" class="champs" autocomplete="off" placeholder="Votre sujet :" required minlength="2">
+                            <input id="subject" name="sujet" type="text" class="champs" autocomplete="off" placeholder="Votre sujet :" required minlength="2">
                             <br>
                             <textarea id="last-champ" name="commentaire" autocomplete="off" placeholder="Votre commentaire :" required maxlength="400"></textarea>
                             <br>
-                            <input type="submit" id="souscrire" value="Envoyer" onclick=""/>
+                            <input type="submit" id="souscrire" value="Envoyer" onclick='send_mail()'/>
                     </form>
                 </div>
             </article>
