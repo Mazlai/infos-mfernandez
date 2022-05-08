@@ -128,7 +128,7 @@ footer {
 	margin-top:10px;
     border:1px solid #b1b1b1;
     border-radius:50px;
-	background-image:url("menu_icon.png");
+	background-image:url("./images/menu_icon.png");
     background-color:#b1b1b1;
 	background-repeat:no-repeat;
 	background-size:48px 48px;
@@ -245,17 +245,14 @@ footer {
     padding-right:5px;
 }
 
-.p-styles2 {
-    color:red;
+.images-container {
+    max-width: 25%;
+    height:auto;
 }
 
-#github {
-    text-decoration:none;
-}
-
-#github2:hover {
-    color:#ff7d7d;
-    transition:0.3s ease-in-out;
+.images-container:hover {
+    filter: opacity(0.5) drop-shadow(0 0 0 rgb(168, 33, 33));
+    transition: 0.3s ease-in-out;
 }
 
 /*---------------------------- Contenu deuxième / troisième page ----------------------------*/
