@@ -1,7 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
 
-@import url('');
-
 @import url('https://fonts.googleapis.com/css?family=Dancing+Script:400,500,600,700&display=swap');
 
 /*---------------------------- Base ----------------------------*/
@@ -233,7 +231,6 @@ footer {
 
 #main-title {
     font-size:35px;
-    background-size: 400%;
 }
 
 #p-styles1 {
