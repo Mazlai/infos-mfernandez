@@ -10,10 +10,7 @@
         <link rel="stylesheet" href="style.css">
         <script src="script.js"></script>
         <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
-        <script type="text/javascript">
-            (function() {
-                emailjs.init('user_0b6nRDdjPkBqPvFM4');
-            })();
+        <script type="text/javascript">           
         </script>
 
     </head>
@@ -71,19 +68,19 @@
 
             <article class="container-2" id="second-anchor">
                 <div id="all-content-2">
-                    <h1 id="first-pos-title">&#10148; Mon CV</h1>
+                    <h1 id="first-pos-title"> <span id="first-carac">&#10149;</span> Mon CV</h1>
                     <div class="v-bar">
                         <p class="p-styles3">Pour me pr&#233;senter, je suis Mickael FERNANDEZ, j’ai 19 ans et je r&#233;alise un BUT - Informatique &#224; l’IUT de Blagnac.</p>
                         <p class="p-styles3">&#201;tant int&#233;ress&#233; par le fonctionnement et la r&#233;alisation du codage dans le d&#233;veloppement web, quand on construit un site au fur et &#224; mesure, cela s’av&#232;re &#234;tre une passion que j’&#233;prouve particuli&#232;rement. Pour plus d’informations, vous pouvez toujours me <a href="#third-anchor" id="me-contacter">contacter</a> ou bien regarder mon CV.</p>
                         <a href="./images/Mickael-Fernandez.pdf" id="button-download" target="_blank" download>T&#233;l&#233;charger le CV en format PDF</a>
                     </div>
-                    <h1 class="pos-titles">&#10148; Mon projet professionnel</h1>
+                    <h1 class="pos-titles"> <span id="second-carac">&#10149;</span> Mon projet professionnel</h1>
                     <div class="v-bar">
-                        <p class="p-styles3">&#192; l’heure actuelle, ayant quelques connaissances et comp&#233;tences dans le domaine du d&#233;veloppement web, j’aurai pour ambition de devenir webdesigner ou bien d&#233;veloppeur de site internet comprenant le côt&#233; serveur de l’application dans une bonne entreprise.</p>
+                        <p class="p-styles3">Actuellement, ayant quelques connaissances et comp&#233;tences dans le domaine du d&#233;veloppement web, j’aurai pour ambition de devenir webdesigner ou bien d&#233;veloppeur de site internet comprenant le côt&#233; serveur de l’application dans une bonne entreprise.</p>
                     </div>
-                    <h1 class="pos-titles">&#10148; Mes centres d'int&#233;r&#234;ts</h1>
+                    <h1 class="pos-titles"> <span id="third-carac">&#10149;</span> Mes centres d'int&#233;r&#234;ts</h1>
                     <div class="v-bar">
-                        <p class="p-styles3">J’&#233;prouve une grande passion pour les jeux-vid&#233;os (FPS, Aventure...) car il s’agit de mon passe-temps pr&#233;f&#233;r&#233;. J’aime &#233;galement regarder du sport tels que le rugby (Stade Toulousain), le tennis ou bien encore la F1.</p>
+                        <p class="p-styles3">J’&#233;prouve une grande passion pour les jeux-vid&#233;os (FPS, Aventure...) car il s’agit de mon passe-temps pr&#233;f&#233;r&#233;. J’aime &#233;galement regarder du sport tels que le rugby (Stade Toulousain), le tennis ou bien encore la F1 et depuis peu, la conduite s'avère être un plaisir quotidien.</p>
                         <p class="p-styles3">Dans le domaine professionnel, c’est l’informatique qui constitue mon centre d’int&#233;r&#234;t principal puisque j’aime imaginer, concevoir et r&#233;aliser de nouvelles choses, notamment dans le c&#244;t&#233; front-end (HTML-CSS).</p>
                     </div>
                     <h1 class="pos-titles">&#8205;</h1>
@@ -93,7 +90,7 @@
             <article class="container-3" id="third-anchor">
                 <div id="all-content-3">
                     <div id="form-contact">
-                        <h1>&#10148; Contactez-moi</h1>
+                        <h1 id="form-title"> <span id="form-carac">&#10149;</span> Contactez-moi</h1>
                         <hr>
                             <br>
                             <input id="from-name" name="nom" type="text" class="champs" autocomplete="off" placeholder="Votre nom :" required minlength="2">
@@ -104,7 +101,7 @@
                             <br>
                             <textarea id="last-champ" name="commentaire" autocomplete="off" placeholder="Votre commentaire :" required maxlength="400"></textarea>
                             <br>
-                            <button id="souscrire" onclick='send_mail()'>Envoyer</button>
+                            <button id="souscrire" onclick='refreshPage()'>Envoyer</button>
                     </div>
                 </div>
             </article>
