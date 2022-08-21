@@ -596,7 +596,7 @@ footer {
 
 @media (max-width: 1070px) { /*Premier décalage du header*/
 
-    #main-title, #first-carac, #second-carac, #third-carac {
+    #main-title, #first-carac, #second-carac, #third-carac, #form-carac {
         font-size:24px;
     }
 
