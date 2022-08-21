@@ -326,13 +326,13 @@ footer {
 
 #first-pos-title {
     font-family: 'Poppins', sans-serif;
-    font-size:26px;
+    font-size:25px;
     margin-bottom:100px;
 }
 
 #first-carac {
     color:orangered;
-    font-size:32px;
+    font-size:28px;
 }
 
 /*Element contenant le texte + la barre verticale + le bouton télécharger
@@ -347,19 +347,19 @@ footer {
 
 .pos-titles {
     font-family: 'Poppins', sans-serif;
-    font-size:26px;
+    font-size:25px;
     margin-top:75px;
     margin-bottom:100px;
 }
 
 #second-carac {
     color:orange;
-    font-size:32px;
+    font-size:28px;
 }
 
 #third-carac {
     color:yellow;
-    font-size:32px;
+    font-size:28px;
 }
 
 .p-styles3 {
@@ -417,12 +417,12 @@ footer {
 
 #form-title {
     font-family: 'Poppins', sans-serif;
-    font-size:26px;
+    font-size:25px;
 }
 
 #form-carac {
     color:rgb(219, 128, 255);
-    font-size:32px;
+    font-size:28px;
 }
 
 .champs, #last-champ, #souscrire {
