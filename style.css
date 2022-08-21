@@ -1,6 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
 
-@import url('https://fonts.googleapis.com/css?family=Dancing+Script:400,500,600,700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital@1&display=swap');
 
 /*---------------------------- Base ----------------------------*/
 html {
@@ -23,7 +23,6 @@ section {
 
 h1 {
 	line-height:30px;
-    font-family:'Dancing Script';
 	font-size:32px;
 	color:white;
 }
@@ -183,10 +182,10 @@ footer {
     margin-left:auto;
     margin-right:auto;
     width:100%;
-    background: linear-gradient(45deg, #0a0a0a, #1a1a1a, #1f1f1f, #252525);
+    background: linear-gradient(45deg, #1d1d1d, #ac5252, #b62121);
     background-size:600% 100%;
 
-    animation: GradientBackground 15s linear infinite;
+    animation: GradientBackground 4s linear infinite;
     animation-direction: alternate;
 }
 
@@ -219,7 +218,6 @@ footer {
 #main-content, #content-mlegales {
     margin-bottom:100px;
     padding:30px;
-    font-family:'Dancing Script';
     backdrop-filter: blur(10px);
 }
 
@@ -230,7 +228,8 @@ footer {
 }
 
 #main-title {
-    font-size:35px;
+    font-family: 'Poppins', sans-serif;
+    font-size:28px;
 }
 
 #p-styles1 {
@@ -326,7 +325,14 @@ footer {
 }
 
 #first-pos-title {
+    font-family: 'Poppins', sans-serif;
+    font-size:28px;
     margin-bottom:100px;
+}
+
+#first-carac {
+    color:orangered;
+    font-size:32px;
 }
 
 /*Element contenant le texte + la barre verticale + le bouton télécharger
@@ -340,8 +346,20 @@ footer {
 }
 
 .pos-titles {
+    font-family: 'Poppins', sans-serif;
+    font-size:28px;
     margin-top:75px;
     margin-bottom:100px;
+}
+
+#second-carac {
+    color:orange;
+    font-size:32px;
+}
+
+#third-carac {
+    color:yellow;
+    font-size:32px;
 }
 
 .p-styles3 {
@@ -388,13 +406,23 @@ footer {
 
 #form-contact {
     margin-top:40px;
-    margin-bottom:100px;
+    margin-bottom:125px;
     padding:10px;
     max-width:800px;
     width:90%;
     border-radius:5px;
     border:3px solid rgb(219, 128, 255);
     background-color:#1f1f1f;
+}
+
+#form-title {
+    font-family: 'Poppins', sans-serif;
+    font-size:28px;
+}
+
+#form-carac {
+    color:rgb(219, 128, 255);
+    font-size:32px;
 }
 
 .champs, #last-champ, #souscrire {
