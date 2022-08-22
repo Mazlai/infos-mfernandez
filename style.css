@@ -230,7 +230,7 @@ footer {
 }
 
 #main-title {
-    font-family: 'Poppins', sans-serif;
+    font-family:'Poppins', sans-serif;
     font-size:28px;
 }
 
@@ -327,7 +327,7 @@ footer {
 }
 
 #first-pos-title {
-    font-family: 'Poppins', sans-serif;
+    font-family:'Poppins', sans-serif;
     font-size:28px;
     margin-bottom:100px;
 }
@@ -348,7 +348,7 @@ footer {
 }
 
 .pos-titles {
-    font-family: 'Poppins', sans-serif;
+    font-family:'Poppins', sans-serif;
     font-size:28px;
     margin-top:75px;
     margin-bottom:100px;
@@ -394,7 +394,6 @@ footer {
     text-align:center;
     font-family:'Merriweather Sans', sans-serif;
     font-size:20px;
-    font-weight:bold;
     text-decoration:none;
     background-color:#E8E8E8;
     color:#1a1a1a;
@@ -418,7 +417,7 @@ footer {
 }
 
 #form-title {
-    font-family: 'Poppins', sans-serif;
+    font-family:'Poppins', sans-serif;
     font-size:28px;
 }
 
@@ -430,7 +429,6 @@ footer {
 .champs, #last-champ, #souscrire {
     margin-left:auto;
     margin-right:auto;
-    font-weight:bold;
     font-family:'Merriweather Sans', sans-serif;
 }
 
