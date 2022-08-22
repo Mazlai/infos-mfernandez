@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
 @import url('https://fonts.googleapis.com/css2?family=Poppins:ital@1&display=swap');
 
 /*---------------------------- Base ----------------------------*/
@@ -180,6 +181,9 @@ footer {
     margin-left:auto;
     margin-right:auto;
     width:100%;
+}
+
+.container-1 {
     background: linear-gradient(45deg, #1d1d1d, #ac5252, #b62121);
     background-size:600% 100%;
 
@@ -507,6 +511,14 @@ footer {
 
 /*---------------------------- Contenu page mentions légales ----------------------------*/
 
+#container-mlegales {
+    background: linear-gradient(45deg, #1f1f1f, #5e407a, #7720c9);
+    background-size:600% 100%;
+    
+    animation: GradientBackground 4s linear infinite;
+    animation-direction: alternate;  
+}
+
 #content-mlegales {
     border-radius:80px;
     border:4px solid #74009e;
@@ -514,8 +526,19 @@ footer {
 }
 
 #title-mlegales {
+    font-size:28px;
+    font-family:'Poppins';
     margin-bottom:50px;
     text-align:center;
+    color:rgb(225, 149, 255);
+}
+
+.mlegales-subtitles {
+    font-family:'Poppins';
+    font-size:22px;
+}
+
+.mlegales-carac {
     color:rgb(225, 149, 255);
 }
 
