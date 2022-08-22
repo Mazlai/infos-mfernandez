@@ -616,11 +616,11 @@ footer {
 
 @media (max-width: 1070px) { /*Premier décalage du header*/
 
-    #main-title, #first-carac, #second-carac, #third-carac, #form-carac {
+    #main-title, #first-carac, #second-carac, #third-carac, #form-carac, #title-mlegales {
         font-size:24px;
     }
 
-    #first-pos-title, .pos-titles, #form-title{
+    #first-pos-title, .pos-titles, #form-title, .mlegales-subtitles{
         font-size:22px;
     }
 
