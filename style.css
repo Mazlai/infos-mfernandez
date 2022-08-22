@@ -527,14 +527,14 @@ footer {
 
 #title-mlegales {
     font-size:28px;
-    font-family:'Poppins';
+    font-family:'Poppins', sans-serif;
     margin-bottom:50px;
     text-align:center;
     color:rgb(225, 149, 255);
 }
 
 .mlegales-subtitles {
-    font-family:'Poppins';
+    font-family:'Poppins', sans-serif;
     font-size:22px;
 }
 
