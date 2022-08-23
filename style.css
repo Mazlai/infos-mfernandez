@@ -601,9 +601,8 @@ footer {
         justify-content:center;
         margin-left:auto;
 		margin-right:auto;
-        height:25%;
+        height:15%;
         width:100%;
-		line-height:30px;
         font-size:15px;
         transition:ease-out 0.5s;
     }
