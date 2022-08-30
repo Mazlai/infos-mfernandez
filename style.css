@@ -94,25 +94,8 @@ footer {
 /*Effets d'animation sur les boutons du header*/
 
 .h-items:hover, #h-items2:hover{
-    color:#E8E8E8;
-}
-
-.h-items:before, #h-items2:before{
-    content:"";
-    position:absolute;
-    bottom:0;
-    left:0;
-    right:0;
-    top:100%;
-    z-index:-1;
-    background:#1a1a1a;
-
-    transition:0.09s ease-in;
-    -webkit-transition:top 0.09s ease-in;
-}
-
-.h-items:hover:before, #h-items2:hover:before {
-    top:0;
+    background-color:#E8E8E8;
+    transition:0.2s ease-in-out;
 }
 
 /*Bouton affiché/non-affiché dans le header (au bout d'une certaine taille)*/
