@@ -728,6 +728,21 @@ footer {
     #planet-header {
         display:block;
     }
+
+    .p-styles4 {
+        text-align:justify;
+    }
+}
+
+@media (max-width: 768px) {
+    #pos-content {
+        width:85%;
+    }
+
+    #content-mlegales {
+        padding-left:20px;
+        padding-right:20px;
+    }
 }
 
 @media (max-width: 400px) {
