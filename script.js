@@ -18,11 +18,6 @@ function scrollToTop() {
 	window.scrollTo({top:0, behavior:'smooth'});
 }
 
-document.getElementById('h-items2').addEventListener('click', function(e) {
-    e.preventDefault(); // Empêche le comportement par défaut du lien
-    window.location.href = '/info-mfernandez/'; // Redirige vers la page d'accueil
-});
-
 /*function send_mail(params) {
 	var tempParams = {
 		from_name:document.getElementById('from-name').value,

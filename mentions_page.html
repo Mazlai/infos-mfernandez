@@ -15,8 +15,14 @@
 <body>
     <header>
         <div id="h-content2">
-            <a href="/" id="h-items2">Retour Accueil</a>
+            <a href="#" id="h-items2">Retour Accueil</a>
         </div> 
+        <script>
+            document.getElementById('h-items2').addEventListener('click', function(e) {
+                e.preventDefault(); // Empêche le comportement par défaut du lien
+                window.location.href = 'https://mazlai.github.io/info-mfernandez/'; // Redirige vers la page d'accueil
+            });
+        </script>
     </header>
 
     <section id="index-section">
