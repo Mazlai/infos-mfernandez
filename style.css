@@ -96,6 +96,7 @@ footer {
 .h-items:hover, #h-items2:hover{
     background-color:#E8E8E8;
     transition:0.2s ease-in-out;
+    cursor:pointer;
 }
 
 /*Bouton affiché/non-affiché dans le header (au bout d'une certaine taille)*/
