@@ -2,12 +2,12 @@
 <html lang="fr">
 
     <head>
+        <title>Site web - FERNANDEZ Mickael</title>
         <meta charset="UTF-8">
         <meta name="apple-mobile-web-app-capable" content="yes">
         <meta name="mobile-web-app-capable" content="yes">
         <meta name="viewport" content="user-scalable=no, width=device-width, initial-scale=1">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <title>Site web - FERNANDEZ Mickael</title>
         <link rel="stylesheet" href="style.css">
         <link rel="icon" href="./images/mf-logo.ico">
         <script type="text/javascript" src="script.js"></script>
@@ -19,9 +19,9 @@
         <header>
             <div id="h-content">
                 <div id="h-hide"><img id="logo-menu" src="./images/menu_icon.png" alt="logo-noir-menu_hamburger" onclick="hide_header();"></div> 
-                <a href="#top" class="h-items">Accueil</a>
-                <a href="#second-anchor" class="h-items">CV / Projets professionnels / Centres d'int&#233;r&#234;t</a>
-                <a href="#third-anchor" class="h-items">Me contacter</a>
+                <a class="h-items" onclick="scrollToTop()">Accueil</a>
+                <a class="h-items" onclick="scrollToAnchor('second-anchor')">CV / Projets professionnels / Centres d'int&#233;r&#234;t</a>
+                <a class="h-items" onclick="scrollToAnchor('third-anchor')">Me contacter</a>
             </div> 
             <div id="h-show" onclick="show_header();"></div>
             <div id="planet-header"><img id="logo-planet" src="./images/half-planet.png" alt="Image de planète"></div>
@@ -42,7 +42,7 @@
                             <p id="p-styles1">Vous trouverez des informations sur ma personnalit&#233; telles que mon CV, mon projet professionnel ou encore mes centres d'int&#233;r&#234;ts.</p>
 
                             <div id="content-left-button">
-                                <a id="button-more" href="#second-anchor">En savoir plus</a>
+                                <a id="button-more" onclick="scrollToAnchor('second-anchor')">En savoir plus</a>
                             </div>
 
                             <div id="pos-contact-container"> 

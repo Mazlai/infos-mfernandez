@@ -7,6 +7,17 @@ function hide_header() {
 	document.getElementById('h-show').style.display = 'block';
 }
 
+function scrollToAnchor(anchorId) {
+	const targetElement = document.getElementById(anchorId);
+	if (targetElement) {
+	  targetElement.scrollIntoView({ behavior: 'smooth' });
+	}
+}
+
+function scrollToTop() {
+	window.scrollTo({top:0, behavior:'smooth'});
+}
+
 /*function send_mail(params) {
 	var tempParams = {
 		from_name:document.getElementById('from-name').value,
