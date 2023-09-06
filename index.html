@@ -9,10 +9,9 @@
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <title>Site web - FERNANDEZ Mickael</title>
         <link rel="stylesheet" href="style.css">
-        <script src="script.js"></script>
-        <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
-        <script type="text/javascript">           
-        </script>
+        <link rel="icon" href="./images/mf-logo.ico">
+        <script type="text/javascript" src="script.js"></script>
+        <!--script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script-->
     </head>
 
     <body>
@@ -24,67 +23,80 @@
                 <a href="#second-anchor" class="h-items">CV / Projets professionnels / Centres d'int&#233;r&#234;t</a>
                 <a href="#third-anchor" class="h-items">Me contacter</a>
             </div> 
-            <div id="h-show" onclick="show_header();">
-            </div> 
+            <div id="h-show" onclick="show_header();"></div>
+            <div id="planet-header"><img id="logo-planet" src="./images/half-planet.png" alt="Image de planète"></div>
         </header>
         
         <section id="index-section">
             <article class="container-1">
+
+                <div id="space">
+                </div>
+
                 <div id="all-content">
                     <div id="main-content">
-                        <h1 id="main-title">Bienvenue sur le site personnel de Mickael FERNANDEZ</h1>
-                        <hr>
-                        <p id="p-styles1">Vous trouverez des informations sur ma personnalit&#233; telles que mon CV, mon projet professionnel ou encore mes centres d'int&#233;r&#234;ts.</p>
+
+                        <div class="content-left">
+                            <h1 id="main-title">Bienvenue sur le site personnel de Mickael FERNANDEZ</h1>
+                            <hr id="bar-space">
+                            <p id="p-styles1">Vous trouverez des informations sur ma personnalit&#233; telles que mon CV, mon projet professionnel ou encore mes centres d'int&#233;r&#234;ts.</p>
+
+                            <div id="content-left-button">
+                                <a id="button-more" href="#second-anchor">En savoir plus</a>
+                            </div>
+
+                            <div id="pos-contact-container"> 
+
+                                <div class="contact-container">
+                                    <a class="links" href="https://www.linkedin.com/in/mickael-fernandez-mf/">
+                                        <img class="images-container" src="./images/linkedin.png" alt="logo-blanc-linkedin">
+                                    </a>
+                                    <a class="links" href="https://www.instagram.com/mf.mazlai/?hl=fr">
+                                        <img class="images-container" src="./images/instagram.png" alt="logo-blanc-instagram">
+                                    </a>
+                                    <a class="links" href="https://github.com/Mazlai">
+                                        <img class="images-container" src="./images/github.png" alt="logo-blanc-github">
+                                    </a>
+                                </div>
+        
+                            </div>
+
+                        </div>
+
+                        <div class="planet-image-container">
+                            <img class="planet-image" src="./images/half-planet.png" alt="Image de planète">
+                        </div>
+
                     </div>
 
-                    <div id="pos-contact-container"> 
-                        <div class="contact-container">
-                            <div class="contact-text">                          
-                                <h2>LinkedIn</h2>
-                                <a href="https://www.linkedin.com/in/mickael-fernandez-28905723a/">
-                                    <img class="images-container" src="./images/linkedin.png" alt="logo-blanc-linkedin">
-                                </a>
-                            </div>
-                        </div>   
-                        <div class="contact-container">
-                            <div class="contact-text">
-                                <h2>Instagram</h2>
-                                <a href="https://www.instagram.com/mf.mazlai/?hl=fr">
-                                    <img class="images-container" src="./images/instagram.png" alt="logo-blanc-instagram">
-                                </a>
-                            </div>
-                        </div>
-                        <div class="contact-container" id="container-github">
-                            <div class="contact-text">
-                                <h2>GitHub</h2>
-                                <a href="https://github.com/Mazlai">
-                                    <img class="images-container" src="./images/github.png" alt="logo-blanc-github">
-                                </a>
-                            </div>
-                        </div>   
-                    </div>
                 </div>
             </article>    
 
             <article class="container-2" id="second-anchor">
+
                 <div id="all-content-2">
+
                     <h1 id="first-pos-title"> <span id="first-carac">&#10149;</span> Mon CV</h1>
                     <div class="v-bar">
-                        <p class="p-styles3">Pour me pr&#233;senter, je suis Mickael FERNANDEZ, j’ai 19 ans et je r&#233;alise un BUT - Informatique &#224; l’IUT de Blagnac.</p>
+                        <p class="p-styles3">Pour me pr&#233;senter, je suis Mickael FERNANDEZ, j’ai 20 ans et je r&#233;alise un BUT - Informatique &#224; l’IUT de Blagnac.</p>
                         <p class="p-styles3">&#201;tant int&#233;ress&#233; par le fonctionnement et la r&#233;alisation du codage dans le d&#233;veloppement web, quand on construit un site au fur et &#224; mesure, cela s’av&#232;re &#234;tre une passion que j’&#233;prouve particuli&#232;rement. Pour plus d’informations, vous pouvez toujours me <a href="#third-anchor" id="me-contacter">contacter</a> ou bien regarder mon CV.</p>
                         <a href="./images/Mickael-Fernandez.pdf" id="button-download" target="_blank" download>T&#233;l&#233;charger le CV en format PDF</a>
                     </div>
+
                     <h1 class="pos-titles"> <span id="second-carac">&#10149;</span> Mon projet professionnel</h1>
                     <div class="v-bar">
                         <p class="p-styles3">Actuellement, ayant quelques connaissances et comp&#233;tences dans le domaine du d&#233;veloppement web, j’aurai pour ambition de devenir webdesigner ou bien d&#233;veloppeur de site internet comprenant le côt&#233; serveur de l’application dans une bonne entreprise.</p>
                     </div>
+
                     <h1 class="pos-titles"> <span id="third-carac">&#10149;</span> Mes centres d'int&#233;r&#234;ts</h1>
                     <div class="v-bar">
                         <p class="p-styles3">J’&#233;prouve une grande passion pour les jeux-vid&#233;os (FPS, Aventure...) car il s’agit de mon passe-temps pr&#233;f&#233;r&#233;. J’aime &#233;galement regarder du sport tels que le rugby (Stade Toulousain), le tennis ou bien encore la F1 et depuis peu, la conduite s'avère être un plaisir quotidien.</p>
                         <p class="p-styles3">Dans le domaine professionnel, c’est l’informatique qui constitue mon centre d’int&#233;r&#234;t principal puisque j’aime imaginer, concevoir et r&#233;aliser de nouvelles choses, notamment dans le c&#244;t&#233; front-end (HTML-CSS).</p>
                     </div>
+
                     <h1 class="pos-titles">&#8205;</h1>
                 </div>
+
             </article>
 
             <article class="container-3" id="third-anchor">
@@ -92,16 +104,17 @@
                     <div id="form-contact">
                         <h1 id="form-title"> <span id="form-carac">&#10149;</span> Contactez-moi</h1>
                         <hr>
-                            <br>
-                            <input id="from-name" name="nom" type="text" class="champs" autocomplete="off" placeholder="Votre nom :" required minlength="2">
-                            <br>
-                            <input id="user-email" name="adresse" type="text" class="champs" autocomplete="off" placeholder="Votre adresse :" required minlength="5">
-                            <br>
-                            <input id="subject" name="sujet" type="text" class="champs" autocomplete="off" placeholder="Votre sujet :" required minlength="2">
-                            <br>
-                            <textarea id="last-champ" name="commentaire" autocomplete="off" placeholder="Votre commentaire :" required maxlength="400"></textarea>
-                            <br>
-                            <button id="souscrire" onclick='refreshPage()'>Envoyer</button>
+                        <br>
+                        <input id="from-name" name="nom" type="text" class="champs" autocomplete="off" placeholder="Votre nom :" required minlength="2">
+                        <br>
+                        <input id="user-email" name="adresse" type="text" class="champs" autocomplete="off" placeholder="Votre adresse :" required minlength="5">
+                        <br>
+                        <input id="subject" name="sujet" type="text" class="champs" autocomplete="off" placeholder="Votre sujet :" required minlength="2">
+                        <br>
+                        <textarea id="last-champ" name="commentaire" autocomplete="off" placeholder="Votre commentaire :" required maxlength="400"></textarea>
+                        <br>
+                        <!--button id="souscrire" onclick='refreshPage()'>Envoyer</button-->
+                        <button id="souscrire">Envoyer</button>
                     </div>
                 </div>
             </article>

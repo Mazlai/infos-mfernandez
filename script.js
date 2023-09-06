@@ -7,7 +7,7 @@ function hide_header() {
 	document.getElementById('h-show').style.display = 'block';
 }
 
-function send_mail(params) {
+/*function send_mail(params) {
 	var tempParams = {
 		from_name:document.getElementById('from-name').value,
 		user_email:document.getElementById('user-email').value,
@@ -19,4 +19,4 @@ function send_mail(params) {
 	.then(function(response) {
 		console.log("Success", response.status);
 	})
-}
+}*/
