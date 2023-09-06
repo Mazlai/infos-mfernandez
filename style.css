@@ -175,15 +175,12 @@ footer {
     margin-left:auto;
     margin-right:auto;
     width:100%;
-}
-
-.container-1 {
     background-color:#0C0B0B;
 }
 
 /*Arrière-plan sur le thème de l'espace*/
 
-.container-1 #space {
+.container-1 .space, #container-mlegales .space {
     height: 1px;
     width: 1px;
     background-color: #fff;
@@ -212,6 +209,9 @@ footer {
     flex-direction:column;
     margin-top:100px;
     margin-bottom:200px;
+}
+
+#all-content {
     max-width:1400px;
     width:85%;
 }
@@ -355,11 +355,11 @@ footer {
 }
 
 .container-2 {
-    background-color:#1f1f1f;
+    background-color:#111010;
 }
 
 .container-3 {
-    background-color:#252525;
+    background-color:rgb(22, 22, 22);
 }
 
 /*Ensemble des éléments du conteneur de la deuxième/troisième page
@@ -564,12 +564,9 @@ footer {
 
 /*---------------------------- Contenu page mentions légales ----------------------------*/
 
-#container-mlegales {
-    background: linear-gradient(45deg, #1f1f1f, #5e407a, #7720c9);
-    background-size:600% 100%;
-    
-    animation: GradientBackground 4s linear infinite;
-    animation-direction: alternate;  
+#pos-content {
+    max-width:1000px;
+    width:70%;
 }
 
 #content-mlegales {
