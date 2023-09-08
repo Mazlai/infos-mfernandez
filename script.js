@@ -1,6 +1,7 @@
 function show_header() {
 	document.getElementById('h-content').style.display = 'flex';
 	document.getElementById('h-show').style.display = 'none';
+	document.getElementById('planet-header').style.display = 'none';
 }
 function hide_header() {
 	document.getElementById('h-content').style.display = '';
