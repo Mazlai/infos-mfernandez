@@ -441,14 +441,14 @@ footer {
     margin-right:auto;
 	margin-top:30px;
     margin-bottom:20px;
-    padding:20px 40px;
-    width:40%;
+    padding:15px 25px;
+    width:35%;
     border:none;
     border-radius:10px;
     line-height:25px;
     text-align:center;
     font-family:'Merriweather Sans', sans-serif;
-    font-size:20px;
+    font-size:18px;
     text-decoration:none;
     background-color:#E8E8E8;
     color:#1a1a1a;
@@ -509,10 +509,11 @@ footer {
 }
 
 #souscrire {
-    padding:20px 40px;
+    padding:15px 20px;
+    font-weight:bold;
+    font-size:18px;
     border-radius:10px;
     border:2px solid #E8E8E8;
-    font-size:20px;
     background-color:#0C0B0B;
     color:#E8E8E8;
 }
@@ -693,8 +694,12 @@ footer {
         font-size:22px;
     }
 
-    h2, #button-download, #p-styles1, #souscrire {
+    h2, #p-styles1 {
         font-size:18px;
+    }
+
+    #button-download, #souscrire {
+        font-size:16px;
     }
 
     p, .f-items, .p-styles2 {
