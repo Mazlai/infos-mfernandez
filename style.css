@@ -669,7 +669,7 @@ footer {
         transition:ease-out 0.5s;
     }
 
-    #h-show, #h-hide {
+    #h-show, #h-hide, #planet-header {
 		display:block;
 	}
 
@@ -729,11 +729,7 @@ footer {
     .planet-image-container {
         display:none;
     }
-
-    #planet-header {
-        display:block;
-    }
-
+    
     .p-styles4 {
         text-align:justify;
     }

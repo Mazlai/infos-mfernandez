@@ -6,6 +6,7 @@ function show_header() {
 function hide_header() {
 	document.getElementById('h-content').style.display = '';
 	document.getElementById('h-show').style.display = 'block';
+	document.getElementById('planet-header').style.display = 'block';
 }
 
 function scrollToAnchor(anchorId) {
