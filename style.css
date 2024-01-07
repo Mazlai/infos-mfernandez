@@ -1288,11 +1288,7 @@ footer {
         font-size:18px;
     }
 
-    #button-download, #souscrire {
-        font-size:16px;
-    }
-
-    .carousel-content, .cd-timeline-content h3 {
+    .carousel-content, .cd-timeline-content h3, #button-download, #souscrire {
         font-size:15px;
     }
 
