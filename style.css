@@ -1288,12 +1288,20 @@ footer {
         font-size:18px;
     }
 
-    #button-download, #souscrire, .carousel-content {
+    #button-download, #souscrire {
         font-size:16px;
     }
 
-    p, .f-items, .p-styles2, .carousel-content-p, .custom-link {
+    .carousel-content, .cd-timeline-content h3 {
+        font-size:15px;
+    }
+
+    p, .f-items, .p-styles2 {
         font-size:13px;
+    }
+
+    .carousel-content-p, .custom-link {
+        font-size:11px;
     }
 
     #all-content {
@@ -1341,14 +1349,8 @@ footer {
         width:100%;
     }
 
-    .cd-timeline-content h3 {
-        font-size: 20px;
-        font-size: 1.25rem;
-    }
-
-    .cd-timeline-content .cd-read-more, .cd-timeline-content .cd-date {
-        font-size: 14px;
-        font-size: 0.875rem;
+    .cd-timeline-content .cd-read-more, .cd-timeline-content .cd-date, .cd-timeline-content p {
+        font-size: 11px;
     }
     
     #pos-content {
