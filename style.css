@@ -1328,7 +1328,17 @@ footer {
 @media (max-width: 768px) {
 
     .competences-container, .soft-skills-container {
-        grid-template-columns: 1fr; /* Une colonne pour les écrans étroits */
+        grid-template-columns: 1fr; 
+    }
+
+    .carousel-cell-image {
+        display:none;
+    }
+
+    .carousel-cell-text {
+        display:flex;
+        flex-direction:column;
+        width:100%;
     }
 
     .cd-timeline-content h3 {
