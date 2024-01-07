@@ -20,6 +20,8 @@ function scrollToTop() {
 	window.scrollTo({top:0, behavior:'smooth'});
 }
 
+
+
 /*function send_mail(params) {
 	var tempParams = {
 		from_name:document.getElementById('from-name').value,
