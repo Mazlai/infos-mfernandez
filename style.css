@@ -524,6 +524,8 @@ footer {
     max-height:20px;
 }
 
+/*Timeline*/
+
 .cd-container {
     font-family:'Roboto';
     width: 100%;
@@ -558,7 +560,7 @@ footer {
 
 .cd-timeline-block {
     position: relative;
-    margin: 2em 0;
+    margin: 3em 0;
 }
 
 .cd-timeline-block:after {
@@ -576,7 +578,11 @@ footer {
 }
 
 .cd-timeline-img {
+    cursor:pointer;
+    display:flex;
     position: absolute;
+    justify-content:center;
+    align-items: center;
     top: 8px;
     left: 12px;
     width: 30px;
@@ -584,9 +590,23 @@ footer {
     border-radius: 50%;
 }
 
+.cd-timeline-img i {
+    font-size:20px;
+}
+
+.fa-eye, .fa-eye-slash {
+    color:white;
+}
+
 .cd-competence-1 {
     background:red;
     box-shadow: 0 0 0 4px rgb(192, 13, 13), inset 0 2px 0 rgba(0, 0, 0, 0.08), 0 3px 0 4px rgba(0, 0, 0, 0.05);
+}
+
+.cd-competence-1:hover {
+    background:rgb(192, 13, 13);
+    box-shadow: 0 0 0 4px darkred, inset 0 2px 0 rgba(0, 0, 0, 0.08), 0 3px 0 4px rgba(0, 0, 0, 0.05);
+    transition:0.2s ease-in-out;
 }
 
 .cd-competence-2 {
@@ -594,9 +614,21 @@ footer {
     box-shadow: 0 0 0 4px rgb(192, 135, 13), inset 0 2px 0 rgba(0, 0, 0, 0.08), 0 3px 0 4px rgba(0, 0, 0, 0.05);
 }
 
+.cd-competence-2:hover {
+    background:rgb(192, 135, 13);
+    box-shadow: 0 0 0 4px rgb(138, 101, 22), inset 0 2px 0 rgba(0, 0, 0, 0.08), 0 3px 0 4px rgba(0, 0, 0, 0.05);
+    transition:0.2s ease-in-out;
+}
+
 .cd-competence-3 {
     background:gold;
     box-shadow: 0 0 0 4px rgb(192, 174, 13), inset 0 2px 0 rgba(0, 0, 0, 0.08), 0 3px 0 4px rgba(0, 0, 0, 0.05);
+}
+
+.cd-competence-3:hover {
+    background:rgb(192, 174, 13);
+    box-shadow: 0 0 0 4px rgb(131, 121, 30), inset 0 2px 0 rgba(0, 0, 0, 0.08), 0 3px 0 4px rgba(0, 0, 0, 0.05);
+    transition:0.2s ease-in-out;
 }
 
 .cd-competence-4 {
@@ -604,9 +636,21 @@ footer {
     box-shadow: 0 0 0 4px rgb(13, 192, 117), inset 0 2px 0 rgba(0, 0, 0, 0.08), 0 3px 0 4px rgba(0, 0, 0, 0.05);
 }
 
+.cd-competence-4:hover {
+    background:rgb(13, 192, 117);
+    box-shadow: 0 0 0 4px rgb(29, 129, 87), inset 0 2px 0 rgba(0, 0, 0, 0.08), 0 3px 0 4px rgba(0, 0, 0, 0.05);
+    transition:0.2s ease-in-out;
+}
+
 .cd-competence-5 {
     background:blue;
     box-shadow: 0 0 0 4px rgb(13, 16, 192), inset 0 2px 0 rgba(0, 0, 0, 0.08), 0 3px 0 4px rgba(0, 0, 0, 0.05);
+}
+
+.cd-competence-5:hover {
+    background:rgb(13, 16, 192);
+    box-shadow: 0 0 0 4px rgb(12, 15, 134), inset 0 2px 0 rgba(0, 0, 0, 0.08), 0 3px 0 4px rgba(0, 0, 0, 0.05);
+    transition:0.2s ease-in-out;
 }
 
 .cd-competence-6 {
@@ -614,7 +658,21 @@ footer {
     box-shadow: 0 0 0 4px purple, inset 0 2px 0 rgba(0, 0, 0, 0.08), 0 3px 0 4px rgba(0, 0, 0, 0.05);
 }
 
+.cd-competence-6:hover {
+    background:purple;
+    box-shadow: 0 0 0 4px rgb(87, 6, 87), inset 0 2px 0 rgba(0, 0, 0, 0.08), 0 3px 0 4px rgba(0, 0, 0, 0.05);
+    transition:0.2s ease-in-out;
+}
+
+.cd-timeline-content.show {
+    opacity: 1;
+    display: block;
+    transition: opacity 0.3s ease;
+}
+
 .cd-timeline-content {
+    opacity: 0;
+    display:none;
     position: relative;
     margin-left: 60px;
     margin-right: 30px;
@@ -622,6 +680,7 @@ footer {
     border-radius: 2px;
     padding: 1em;
     box-shadow: 0 3px 0 rgba(0, 0, 0, 0.2);
+    transition: opacity 0.3s ease;
 
     .timeline-content-info {
       background: #272727;
