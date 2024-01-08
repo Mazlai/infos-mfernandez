@@ -621,6 +621,7 @@ footer {
     background: #1f1f1f;
     border-radius: 2px;
     padding: 1em;
+    box-shadow: 0 3px 0 rgba(0, 0, 0, 0.2);
 
     .timeline-content-info {
       background: #272727;
@@ -650,20 +651,27 @@ footer {
     .content-skills {
         font-size: 12px;
         padding:0;
-        margin-bottom: 0;
+        margin: 10px 0 0 0;
         display:flex;
         flex-wrap: wrap;
         justify-content: center;
 
-        li {
+        p {
           background: #363636;
           border-radius: 2px;
           display: inline-block;
           padding: 2px 10px;
-          color: rgba(255,255,255,0.7);
+          color: white;
           margin: 3px 2px;
           text-align: center;
           flex-grow: 1;
+          box-shadow: 1px 1px 0 rgba(0, 0, 0, 0.08);
+        }
+
+        p img {
+            vertical-align: middle;
+            height:15px;
+            width:15px;
         }
     }
 }
@@ -1270,7 +1278,7 @@ footer {
     .cd-timeline-content .cd-date {
         position: absolute;
         width: 100%;
-        left: 122%;
+        left: 130%;
         top: 6px;
         font-size: 16px;
         font-size: 1rem;
@@ -1294,7 +1302,7 @@ footer {
 
     .cd-timeline-block:nth-child(even) .cd-timeline-content .cd-date {
         left: auto;
-        right: 122%;
+        right: 130%;
         text-align: right;
     }
 }
@@ -1313,11 +1321,11 @@ footer {
         font-size:18px;
     }
 
-    .carousel-content, .cd-timeline-content h3, #button-download, #souscrire {
+    .carousel-content, .cd-timeline-content h3,  .competence-1 p, .competence-2 p, .competence-3 p, .competence-4 p, .soft-skill-1 p, .soft-skill-2 p {
         font-size:15px;
     }
 
-    p, .f-items, .p-styles2 {
+    p, .f-items, .p-styles2, .competence-text, #button-download, #souscrire {
         font-size:13px;
     }
 
