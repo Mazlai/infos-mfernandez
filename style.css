@@ -610,8 +610,8 @@ footer {
 }
 
 .cd-competence-6 {
-    background:rgb(15, 15, 15);
-    box-shadow: 0 0 0 4px black, inset 0 2px 0 rgba(0, 0, 0, 0.08), 0 3px 0 4px rgba(0, 0, 0, 0.05);
+    background:darkviolet;
+    box-shadow: 0 0 0 4px purple, inset 0 2px 0 rgba(0, 0, 0, 0.08), 0 3px 0 4px rgba(0, 0, 0, 0.05);
 }
 
 .cd-timeline-content {
@@ -887,13 +887,17 @@ footer {
     background-color:blue;
 }
 
-.soft-skill-2 {
-    border:2px solid black;
+.competence-header-6 {
+    color: darkviolet;
 }
 
-.soft-skill-2:hover {
+.soft-skill-2 {
+    border:2px solid darkviolet;
+}
+
+.soft-skill-2:hover, .soft-skill-2:hover .competence-header-6 {
     color:white;
-    background-color:black;
+    background-color:darkviolet;
 }
 
 .competence-text {
