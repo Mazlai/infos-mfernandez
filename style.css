@@ -1309,6 +1309,14 @@ footer {
 
 @media (max-width: 1070px) { /*Second décalage du header*/
 
+    .content-skills {
+        p img {
+            vertical-align: middle;
+            height:15px;
+            width:15px;
+        }
+    }
+
     #main-title, #first-carac, #second-carac, #third-carac, #fourth-carac, #fifth-carac, #sixth-carac, #form-carac, #title-mlegales {
         font-size:24px;
     }
@@ -1363,6 +1371,14 @@ footer {
 }
 
 @media (max-width: 768px) {
+
+    .content-skills {
+        p img {
+            vertical-align: middle;
+            height:15px;
+            width:15px;
+        }
+    }
 
     .competences-container, .soft-skills-container {
         grid-template-columns: 1fr; 
