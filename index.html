@@ -8,14 +8,21 @@
         <meta name="mobile-web-app-capable" content="yes">
         <meta name="viewport" content="user-scalable=no, width=device-width, initial-scale=1">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+        <!-- CSS -->
         <link rel="stylesheet" href="style.css">
         <link rel="icon" href="./images/mf-logo.ico">
         <link rel="stylesheet" href="./flickity/flickity.css" media="screen">
+        <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+        <!-- JS -->
         <script src="./flickity/flickity.pkgd.min.js"></script>
         <script type="text/javascript" src="script.js"></script>
         <script type="text/javascript" src="dynamic.js"></script>
+        <script type="text/javascript" src="particles.js"></script>
+        <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
         <script src="https://kit.fontawesome.com/1f1ef13669.js" crossorigin="anonymous"></script>
-        <!--script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script-->
+        <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     </head>
 
     <body>
@@ -82,16 +89,16 @@
 
                 <div id="all-content-2">
 
-                    <h1 id="first-pos-title"> <span id="first-carac">&#10149;</span> Mon CV</h1>
-                    <div class="v-bar">
+                    <h1 id="first-pos-title"> <span id="first-carac">&#10149;</span> <span id="title-1"></span></h1>
+                    <div class="v-bar" data-aos="zoom-in-right" data-aos-delay="30">
                         <p class="p-styles3">Pour me pr&#233;senter, je suis Mickael FERNANDEZ, j’ai 20 ans et je r&#233;alise un BUT - Informatique &#224; l’IUT de Blagnac.</p>
                         <p class="p-styles3">&#201;tant int&#233;ress&#233; par le fonctionnement et la r&#233;alisation du codage dans le d&#233;veloppement web, aussi bien en front-end qu'en back-end, cela se révèle &#234;tre une passion que j’&#233;prouve particuli&#232;rement. Pour plus d’informations, je vous invite à me <a href="#third-anchor" id="me-contacter">contacter</a> ou bien à regarder mon CV.</p>
                         <a href="./images/CV-Mickael-FERNANDEZ.pdf" id="button-download" target="_blank" download>T&#233;l&#233;charger le CV en format PDF</a>
                     </div>
 
-                    <h1 class="pos-titles"> <span id="second-carac">&#10149;</span> Mon projet professionnel</h1>
+                    <h1 class="pos-titles"> <span id="second-carac">&#10149;</span> <span id="title-2"></span></h1>
 
-                    <div class="breadcrumb">
+                    <div class="breadcrumb" data-aos="fade-zoom-in" data-aos-delay="30">
                         <a href="https://www.iut-blagnac.fr/fr/">
                             <img src="./images/Logo_IUT_Blagnac.png" alt="Blagnac">
                             <hr>
@@ -111,12 +118,12 @@
                         </a>
                     </div>
 
-                    <div class="v-bar">
+                    <div class="v-bar" data-aos="zoom-in-right" data-aos-delay="30">
                         <p class="p-styles3">Doté d'un BAC+3 avec des connaissances et comp&#233;tences solides dans le domaine du d&#233;veloppement web, j’aurai pour ambition de devenir développeur web full-stack de sites internet et d'applications, dans une entreprise renommée et vigilante au développement durable.</p>
                     </div>
 
-                    <h1 class="pos-titles"> <span id="third-carac">&#10149;</span> Mes centres d'int&#233;r&#234;t</h1>
-                    <div class="v-bar">
+                    <h1 class="pos-titles"> <span id="third-carac">&#10149;</span> <span id="title-3"></span></h1>
+                    <div class="v-bar" data-aos="zoom-in-right" data-aos-delay="30">
                         <p class="p-styles3">J’&#233;prouve une grande passion pour les jeux-vid&#233;os (FPS, Aventure...) car il s’agit de mon passe-temps pr&#233;f&#233;r&#233;. J’aime &#233;galement regarder du sport tels que le rugby (Stade Toulousain), le tennis ou bien encore la F1 et depuis peu, la conduite s'avère être un plaisir quotidien.</p>
                         <p class="p-styles3">Dans le domaine professionnel, c’est l’informatique qui constitue mon centre d’int&#233;r&#234;t principal puisque j’aime imaginer, concevoir et r&#233;aliser de nouvelles choses. Pour cela, je me lance dans de nouveaux projets pour approfondir mon expérience sur certaines technologies mais également en découvrir, tout en faisant preuve d'autodidactisme.</p>
                     </div>
@@ -128,46 +135,46 @@
 
             <article class="container-3" id="third-anchor">
 
-                <div id="all-content-3">
-                    <h1 id="first-pos-title"> <span id="fourth-carac">&#10149;</span> Mes compétences techniques et humaines</h1>
+                <div id="all-content-3"> 
+                    <h1 id="first-pos-title"> <span id="fourth-carac">&#10149;</span> <span id="title-4"></span></h1>
 
                     <div class="competences-container">
-                        <div class="competence-1">
+                        <div class="competence-1" data-aos="fade-right" data-aos-delay="30">
                             <div class="competence-header-1">
                                 <i class="fa-solid fa-laptop-code"></i>
                                 <p>Développer une application</p>
                             </div>
                             <p><span class="competence-text">Élaborer, faire évoluer et maintenir en conditions opérationnelles une application informatique en mêlant front-end et back-end.</span></p>
                         </div>
-                        <div class="competence-2">
+                        <div class="competence-2" data-aos="fade-left" data-aos-delay="30">
                             <div class="competence-header-2">
                                 <i class="fa-solid fa-gears"></i>
                                 <p>Optimiser des applications</p>
                             </div>
                             <p><span class="competence-text">Améliorer les performances des programmes, limiter l'impact environnemental et mettre en place des applications informatiques adaptées et efficaces.</span></p>
                         </div>
-                        <div class="competence-3">
+                        <div class="competence-3" data-aos="fade-right" data-aos-delay="30">
                             <div class="competence-header-3">
                                 <i class="fa-solid fa-terminal"></i>
                                 <p>Administrer des systèmes informatiques communicants complexes</p>
                             </div>
                             <p><span class="competence-text">Déployer une nouvelle architecture technique ou améliorer une infrastructure existante tout en sécurisant les applications et les services.</span></p>
                         </div>
-                        <div class="competence-4">
+                        <div class="competence-4" data-aos="fade-left" data-aos-delay="30">
                             <div class="competence-header-4">
                                 <i class="fa-solid fa-database"></i>
                                 <p>Gérer des données de l'information</p>
                             </div>
                             <p><span class="competence-text">Concevoir et optimiser une base de données, mêlant sécurité, exploitation et intégrité des données.</span></p>
                         </div>
-                        <div class="soft-skill-1">
+                        <div class="soft-skill-1" data-aos="fade-right" data-aos-delay="30">
                             <div class="competence-header-5">
                                 <i class="fa-solid fa-people-arrows"></i>
                                 <p>Travailler dans une équipe</p>
                             </div>
                             <p><span class="competence-text">Élaborer, gérer et transmettre de l'information ainsi qu'organiser son travail en relation avec celui de son équipe.</span></p>
                         </div>
-                        <div class="soft-skill-2">
+                        <div class="soft-skill-2" data-aos="fade-left" data-aos-delay="30">
                             <div class="competence-header-6">
                                 <i class="fa-solid fa-users"></i>
                                 <p>Conduire un projet</p>
@@ -184,9 +191,9 @@
             <article class="container-4" id="fourth-anchor">
 
                 <div id="all-content-4">
-                    <h1 id="first-pos-title"> <span id="fifth-carac">&#10149;</span> Mes principaux projets</h1>
+                    <h1 id="first-pos-title"> <span id="fifth-carac">&#10149;</span> <span id="title-5"></span></h1>
 
-                    <div class="v-bar">
+                    <div class="v-bar" data-aos="zoom-in-right" data-aos-delay="30">
                         <p class="p-styles5">Ci-dessous, vous découvrirez un récapitulatif des principaux projets que j'ai concrétisés au cours de mon parcours académique, tant professionnel qu'éducationnel.</p>
                     </div>
                     <br><br><br>
@@ -268,9 +275,10 @@
                         </div>
                     </div>
                     
-                    <h1 class="pos-titles"> <span id="sixth-carac">&#10149;</span> Mes autres projets</h1>
+                    <h1 class="pos-titles"> <span id="sixth-carac">&#10149;</span> <span id="title-6"></span></h1>
 
-                    <section id="cd-timeline" class="cd-container">
+                    <div id="particles-js"></div>
+                    <section id="cd-timeline" class="cd-container" data-aos="flip-up" data-aos-delay="500">
                         <div class="cd-timeline-block">
                             <div class="cd-timeline-img cd-competence-1 comp-1">
                                 <i class="fa-regular fa-eye fa-shake"></i>
@@ -574,7 +582,7 @@
             </article>
 
             <article class="container-5" id="fifth-anchor">
-                <div id="all-content-5">
+                <div id="all-content-5" data-aos="fade-zoom-in" data-aos-delay="30">
                     <div id="form-contact">
                         <h1 id="form-title"> <span id="form-carac">&#10149;</span> Contactez-moi</h1>
                         <hr>
@@ -587,7 +595,6 @@
                         <br>
                         <textarea id="last-champ" name="commentaire" autocomplete="off" placeholder="Votre commentaire :" required maxlength="400"></textarea>
                         <br>
-                        <!--button id="souscrire" onclick='refreshPage()'>Envoyer</button-->
                         <button id="souscrire">Envoyer</button>
                     </div>
                 </div>
@@ -601,6 +608,9 @@
             </div>
         </footer>
 
+    <script>
+        AOS.init();
+    </script>
     </body>
 
 </html>

@@ -1,5 +1,47 @@
 document.addEventListener('DOMContentLoaded', function() {
 
+    var typed1 = new Typed('#title-1', {
+        strings: ['Mon CV'],
+        typeSpeed: 80,
+        backSpeed: 80,
+        loop: true,
+    });
+
+    var typed2 = new Typed('#title-2', {
+        strings: ['Mon projet professionnel'],
+        typeSpeed: 80,
+        backSpeed: 80,
+        loop: true,
+    });
+
+    var typed3 = new Typed('#title-3', {
+        strings: ['Mes centres d\'intérêt'],
+        typeSpeed: 80,
+        backSpeed: 80,
+        loop: true,
+    });
+
+    var typed4 = new Typed('#title-4', {
+        strings: ['Mes compétences techniques et humaines'],
+        typeSpeed: 80,
+        backSpeed: 80,
+        loop: true,
+    }); 
+
+    var typed5 = new Typed('#title-5', {
+        strings: ['Mes principaux projets'],
+        typeSpeed: 80,
+        backSpeed: 80,
+        loop: true,
+    });
+
+    var typed6 = new Typed('#title-6', {
+        strings: ['Mes autres projets'],
+        typeSpeed: 80,
+        backSpeed: 80,
+        loop: true,
+    });
+
     // Définissez le nombre total de compétences
     var totalCompetences = 11;
 
