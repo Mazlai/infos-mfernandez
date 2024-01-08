@@ -553,7 +553,7 @@ footer {
     left: 25px;
     height: 100%;
     width: 4px;
-    background: #7E57C2;
+    background: white;
 }
 
 .cd-timeline-block {
@@ -582,11 +582,36 @@ footer {
     width: 30px;
     height: 30px;
     border-radius: 50%;
-    box-shadow: 0 0 0 4px #7E57C2, inset 0 2px 0 rgba(0, 0, 0, 0.08), 0 3px 0 4px rgba(0, 0, 0, 0.05);
 }
 
-.cd-timeline-img {
-    background: #673AB7;
+.cd-competence-1 {
+    background:red;
+    box-shadow: 0 0 0 4px rgb(192, 13, 13), inset 0 2px 0 rgba(0, 0, 0, 0.08), 0 3px 0 4px rgba(0, 0, 0, 0.05);
+}
+
+.cd-competence-2 {
+    background:orange;
+    box-shadow: 0 0 0 4px rgb(192, 135, 13), inset 0 2px 0 rgba(0, 0, 0, 0.08), 0 3px 0 4px rgba(0, 0, 0, 0.05);
+}
+
+.cd-competence-3 {
+    background:gold;
+    box-shadow: 0 0 0 4px rgb(192, 174, 13), inset 0 2px 0 rgba(0, 0, 0, 0.08), 0 3px 0 4px rgba(0, 0, 0, 0.05);
+}
+
+.cd-competence-4 {
+    background:lightgreen;
+    box-shadow: 0 0 0 4px rgb(13, 192, 117), inset 0 2px 0 rgba(0, 0, 0, 0.08), 0 3px 0 4px rgba(0, 0, 0, 0.05);
+}
+
+.cd-competence-5 {
+    background:blue;
+    box-shadow: 0 0 0 4px rgb(13, 16, 192), inset 0 2px 0 rgba(0, 0, 0, 0.08), 0 3px 0 4px rgba(0, 0, 0, 0.05);
+}
+
+.cd-competence-6 {
+    background:rgb(15, 15, 15);
+    box-shadow: 0 0 0 4px black, inset 0 2px 0 rgba(0, 0, 0, 0.08), 0 3px 0 4px rgba(0, 0, 0, 0.05);
 }
 
 .cd-timeline-content {
@@ -892,7 +917,7 @@ footer {
 }
 
 #first-carac {
-    color:yellow;
+    color:gold;
 }
 
 #second-carac {
