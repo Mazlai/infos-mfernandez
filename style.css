@@ -1325,7 +1325,7 @@ footer {
         font-size:15px;
     }
 
-    p, .f-items, .p-styles2, .competence-text, #button-download, #souscrire {
+    p, .f-items, .p-styles2, .competence-text, #button-download, #souscrire, .champs::placeholder, #last-champ::placeholder {
         font-size:13px;
     }
 
