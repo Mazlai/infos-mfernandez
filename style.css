@@ -668,10 +668,10 @@ footer {
           box-shadow: 1px 1px 0 rgba(0, 0, 0, 0.08);
         }
 
-        p img {
+        img {
             vertical-align: middle;
-            height:15px;
-            width:15px;
+            max-height:15px;
+            max-width:15px;
         }
     }
 }
@@ -1310,10 +1310,10 @@ footer {
 @media (max-width: 1070px) { /*Second décalage du header*/
 
     .content-skills {
-        p img {
+        img {
             vertical-align: middle;
-            height:15px;
-            width:15px;
+            max-height:15px;
+            max-width:15px;
         }
     }
 
@@ -1373,10 +1373,10 @@ footer {
 @media (max-width: 768px) {
 
     .content-skills {
-        p img {
+        img {
             vertical-align: middle;
-            height:15px;
-            width:15px;
+            max-height:15px;
+            max-width:15px;
         }
     }
 
