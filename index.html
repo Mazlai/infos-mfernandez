@@ -8,10 +8,21 @@
         <meta name="mobile-web-app-capable" content="yes">
         <meta name="viewport" content="user-scalable=no, width=device-width, initial-scale=1">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+        <!-- CSS -->
         <link rel="stylesheet" href="style.css">
         <link rel="icon" href="./images/mf-logo.ico">
+        <link rel="stylesheet" href="./flickity/flickity.css" media="screen">
+        <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+        <!-- JS -->
+        <script src="./flickity/flickity.pkgd.min.js"></script>
         <script type="text/javascript" src="script.js"></script>
-        <!--script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script-->
+        <script type="text/javascript" src="dynamic.js"></script>
+        <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+        <script src="https://kit.fontawesome.com/1f1ef13669.js" crossorigin="anonymous"></script>
+        <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+        <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
     </head>
 
     <body>
@@ -20,8 +31,10 @@
             <div id="h-content">
                 <div id="h-hide"><img id="logo-menu" src="./images/menu_icon.png" alt="logo-noir-menu_hamburger" onclick="hide_header();"></div> 
                 <a class="h-items" onclick="scrollToTop()">Accueil</a>
-                <a class="h-items" onclick="scrollToAnchor('second-anchor')">CV / Projet professionnel / Centres d'int&#233;r&#234;t</a>
-                <a class="h-items" onclick="scrollToAnchor('third-anchor')">Me contacter</a>
+                <a class="h-items" onclick="scrollToAnchor('second-anchor')">CV / À propos</a>
+                <a class="h-items" onclick="scrollToAnchor('third-anchor')">Compétences</a>
+                <a class="h-items" onclick="scrollToAnchor('fourth-anchor')">Projets</a>
+                <a class="h-items" onclick="scrollToAnchor('fifth-anchor')">Me contacter</a>
             </div> 
             <div id="h-show" onclick="show_header();"></div>
             <div id="planet-header"><img id="logo-planet" src="./images/half-planet.png" alt="Image de planète"></div>
@@ -76,22 +89,43 @@
 
                 <div id="all-content-2">
 
-                    <h1 id="first-pos-title"> <span id="first-carac">&#10149;</span> Mon CV</h1>
-                    <div class="v-bar">
+                    <h1 id="first-pos-title"> <span id="first-carac">&#10149;</span> <span id="title-1"></span></h1>
+                    <div class="v-bar" data-aos="zoom-in-right" data-aos-delay="30">
                         <p class="p-styles3">Pour me pr&#233;senter, je suis Mickael FERNANDEZ, j’ai 20 ans et je r&#233;alise un BUT - Informatique &#224; l’IUT de Blagnac.</p>
-                        <p class="p-styles3">&#201;tant int&#233;ress&#233; par le fonctionnement et la r&#233;alisation du codage dans le d&#233;veloppement web, quand on construit un site au fur et &#224; mesure, cela s’av&#232;re &#234;tre une passion que j’&#233;prouve particuli&#232;rement. Pour plus d’informations, vous pouvez toujours me <a href="#third-anchor" id="me-contacter">contacter</a> ou bien regarder mon CV.</p>
+                        <p class="p-styles3">&#201;tant int&#233;ress&#233; par le fonctionnement et la r&#233;alisation du codage dans le d&#233;veloppement web, aussi bien en front-end qu'en back-end, cela se révèle &#234;tre une passion que j’&#233;prouve particuli&#232;rement. Pour plus d’informations, je vous invite à me <a href="#third-anchor" id="me-contacter">contacter</a> ou bien à regarder mon CV.</p>
                         <a href="./images/CV-Mickael-FERNANDEZ.pdf" id="button-download" target="_blank" download>T&#233;l&#233;charger le CV en format PDF</a>
                     </div>
 
-                    <h1 class="pos-titles"> <span id="second-carac">&#10149;</span> Mon projet professionnel</h1>
-                    <div class="v-bar">
-                        <p class="p-styles3">Actuellement, ayant quelques connaissances et comp&#233;tences dans le domaine du d&#233;veloppement web, j’aurai pour ambition de devenir webdesigner ou bien d&#233;veloppeur de site internet comprenant le côt&#233; serveur de l’application dans une bonne entreprise.</p>
+                    <h1 class="pos-titles"> <span id="second-carac">&#10149;</span> <span id="title-2"></span></h1>
+
+                    <div class="breadcrumb" data-aos="fade-zoom-in" data-aos-delay="30">
+                        <a href="https://www.iut-blagnac.fr/fr/">
+                            <img src="./images/Logo_IUT_Blagnac.png" alt="Blagnac">
+                            <hr>
+                            <p><span class="breadcrumb-titles"><b>BUT Informatique - Réalisation d'applications (BAC+3)</b></span></p>
+                            <p><span class="breadcrumb-details">IUT de Blagnac • 2021 - 2023 | Blagnac • 31700</span></p>
+                            <p><span class="breadcrumb-details"><i>Parcours initial et en cours d'obtention</i></span></p>
+                        </a>
+                        <i class="fa-solid fa-arrow-up-long fa-bounce"></i>
+                        <a href="https://deodat.mon-ent-occitanie.fr/">
+                            <img src="./images/deodat.jpg" alt="Déodat">
+                            <hr>
+                            <p><span class="breadcrumb-titles"><b>Baccalauréat Général - Maths & NSI (Numérique et Sciences Informatiques)</b></span></p>
+                            <p><span class="breadcrumb-details">Option Maths Expertes</span></p>
+                            <p><span class="breadcrumb-details">Lycée Déodat de Séverac • 2018 - 2021 | Toulouse • 31300</span></p>
+                            <p><span class="breadcrumb-details"><i>Admis avec mention très bien</i></span></p>
+                            </p>
+                        </a>
                     </div>
 
-                    <h1 class="pos-titles"> <span id="third-carac">&#10149;</span> Mes centres d'int&#233;r&#234;t</h1>
-                    <div class="v-bar">
+                    <div class="v-bar" data-aos="zoom-in-right" data-aos-delay="30">
+                        <p class="p-styles3">Doté d'un BAC+3 avec des connaissances et comp&#233;tences solides dans le domaine du d&#233;veloppement web, j’aurai pour ambition de devenir développeur web full-stack de sites internet et d'applications, dans une entreprise renommée et vigilante au développement durable.</p>
+                    </div>
+
+                    <h1 class="pos-titles"> <span id="third-carac">&#10149;</span> <span id="title-3"></span></h1>
+                    <div class="v-bar" data-aos="zoom-in-right" data-aos-delay="30">
                         <p class="p-styles3">J’&#233;prouve une grande passion pour les jeux-vid&#233;os (FPS, Aventure...) car il s’agit de mon passe-temps pr&#233;f&#233;r&#233;. J’aime &#233;galement regarder du sport tels que le rugby (Stade Toulousain), le tennis ou bien encore la F1 et depuis peu, la conduite s'avère être un plaisir quotidien.</p>
-                        <p class="p-styles3">Dans le domaine professionnel, c’est l’informatique qui constitue mon centre d’int&#233;r&#234;t principal puisque j’aime imaginer, concevoir et r&#233;aliser de nouvelles choses, notamment dans le c&#244;t&#233; front-end (HTML-CSS).</p>
+                        <p class="p-styles3">Dans le domaine professionnel, c’est l’informatique qui constitue mon centre d’int&#233;r&#234;t principal puisque j’aime imaginer, concevoir et r&#233;aliser de nouvelles choses. Pour cela, je me lance dans de nouveaux projets pour approfondir mon expérience sur certaines technologies mais également en découvrir, tout en faisant preuve d'autodidactisme.</p>
                     </div>
 
                     <h1 class="pos-titles">&#8205;</h1>
@@ -100,7 +134,454 @@
             </article>
 
             <article class="container-3" id="third-anchor">
-                <div id="all-content-3">
+
+                <div id="all-content-3"> 
+                    <h1 id="first-pos-title"> <span id="fourth-carac">&#10149;</span> <span id="title-4"></span></h1>
+
+                    <div class="competences-container">
+                        <div class="competence-1" data-aos="fade-right" data-aos-delay="30">
+                            <div class="competence-header-1">
+                                <i class="fa-solid fa-laptop-code"></i>
+                                <p>Développer une application</p>
+                            </div>
+                            <p><span class="competence-text">Élaborer, faire évoluer et maintenir en conditions opérationnelles une application informatique en mêlant front-end et back-end.</span></p>
+                        </div>
+                        <div class="competence-2" data-aos="fade-left" data-aos-delay="30">
+                            <div class="competence-header-2">
+                                <i class="fa-solid fa-gears"></i>
+                                <p>Optimiser des applications</p>
+                            </div>
+                            <p><span class="competence-text">Améliorer les performances des programmes, limiter l'impact environnemental et mettre en place des applications informatiques adaptées et efficaces.</span></p>
+                        </div>
+                        <div class="competence-3" data-aos="fade-right" data-aos-delay="30">
+                            <div class="competence-header-3">
+                                <i class="fa-solid fa-terminal"></i>
+                                <p>Administrer des systèmes informatiques communicants complexes</p>
+                            </div>
+                            <p><span class="competence-text">Déployer une nouvelle architecture technique ou améliorer une infrastructure existante tout en sécurisant les applications et les services.</span></p>
+                        </div>
+                        <div class="competence-4" data-aos="fade-left" data-aos-delay="30">
+                            <div class="competence-header-4">
+                                <i class="fa-solid fa-database"></i>
+                                <p>Gérer des données de l'information</p>
+                            </div>
+                            <p><span class="competence-text">Concevoir et optimiser une base de données, mêlant sécurité, exploitation et intégrité des données.</span></p>
+                        </div>
+                        <div class="soft-skill-1" data-aos="fade-right" data-aos-delay="30">
+                            <div class="competence-header-5">
+                                <i class="fa-solid fa-people-arrows"></i>
+                                <p>Travailler dans une équipe</p>
+                            </div>
+                            <p><span class="competence-text">Élaborer, gérer et transmettre de l'information ainsi qu'organiser son travail en relation avec celui de son équipe.</span></p>
+                        </div>
+                        <div class="soft-skill-2" data-aos="fade-left" data-aos-delay="30">
+                            <div class="competence-header-6">
+                                <i class="fa-solid fa-users"></i>
+                                <p>Conduire un projet</p>
+                            </div>
+                            <p><span class="competence-text">Lancer un projet, piloter son maintien en condition opérationnelle et faire évoluer un système d'information.</span></p>
+                        </div>
+                    </div>
+
+                    <h1 class="pos-titles">&#8205;</h1>
+                </div>
+
+            </article>
+
+            <article class="container-4" id="fourth-anchor">
+
+                <div id="all-content-4">
+                    <h1 id="first-pos-title"> <span id="fifth-carac">&#10149;</span> <span id="title-5"></span></h1>
+
+                    <div class="v-bar" data-aos="zoom-in-right" data-aos-delay="30">
+                        <p class="p-styles5">Ci-dessous, vous découvrirez un récapitulatif des principaux projets que j'ai concrétisés au cours de mon parcours académique, tant professionnel qu'éducationnel.</p>
+                    </div>
+                    <br><br><br>
+
+                    <!-- Carrousel de projets -->
+                    <div class="carousel" data-flickity='{ "wrapAround": true, "fullscreen": true, "lazyLoad":true }'>
+
+                        <div class="carousel-cell">
+                            <div class="carousel-cell-image">
+                                <img id="first-image-carousel" data-flickity-lazyload="./images/logo-rssb.png" alt="RSSB">
+                            </div>
+                            <div class="carousel-cell-text">
+                                <h3 class="carousel-content"><span class="project-context-1">Stage :</span> <u>RSSB</u> • Site web</h3>
+                                <h4 class="carousel-content-p"><i>Objectif : </i>Création et refonte d'un site web dynamique facilitant des démarches répétitives et contraignantes (temps de bénévolat, gestion des activités etc.).</h4>
+                                <h4 class="carousel-content-p">
+                                    <i>Apprentissages : </i><br>
+                                    <span style="color:red;">•</span> Appliquer des principes d'accessibilité et d'ergonomie<br>
+                                    <span style="color:lightgreen;">•</span> Optimiser les modèles de données de l'association<br>
+                                    <span style="color:blue;">•</span> Formaliser les besoins et les contraintes du client<br>
+                                    <span style="color:darkviolet;">•</span> Rendre compte de son activité professionnelle<br>
+                                </h4>
+                                <div class="link-container">
+                                    <a class="custom-link" href="https://github.com/Mazlai/RSSB">
+                                        <img src="./images/purple-github.png" alt="Purple Github">
+                                        GitHub
+                                    </a>
+                                    <a class="custom-link" href="https://reseausocialsolidaireblagnac.org/">
+                                        <img src="./images/logo-rssb.png" alt="Logo RSSB">
+                                        Accès au site web
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="carousel-cell">
+                            <div class="carousel-cell-image">
+                                <img id="second-image-carousel" data-flickity-lazyload="./images/artichaude.jpg" alt="Artichaude">
+                            </div>
+                            <div class="carousel-cell-text">
+                                <h3 class="carousel-content"><span class="project-context-2">Projet :</span> <u>Art'i'Chaud•e</u> • Site web & application Java/Python</h3>
+                                <h4 class="carousel-content-p"><i>Objectif : </i>Mise en place d'un site internet de commerce en ligne d'oeuvres d'art digitales et création d'une application permettant le paramétrage de données associées à un entrepôt (alertes, capteurs).</h4>
+                                <h4 class="carousel-content-p">
+                                    <i>Apprentissages : </i><br>
+                                    <span style="color:gold;">•</span> Concevoir des applications communicantes<br>
+                                    <span style="color:lightgreen;">•</span> Assurer la sécurité des données (intégrité)<br>
+                                    <span style="color:blue;">•</span> Définir une démarche de suivi de projet<br>
+                                    <span style="color:darkviolet;">•</span> Savoir travailler dans une équipe informatique<br>
+                                </h4>
+                                <div class="link-container">
+                                    <a class="custom-link" href="https://github.com/Mazlai/SAE3.01">
+                                        <img src="./images/purple-github.png" alt="Purple Github">
+                                        GitHub
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="carousel-cell">
+                            <div class="carousel-cell-image">
+                                <img id="third-image-carousel" data-flickity-lazyload="./images/dailybank.png" alt="DailyBank">
+                            </div>
+                            <div class="carousel-cell-text">
+                                <h3 class="carousel-content"><span class="project-context-2">Projet :</span> <u>DailyBank</u> • Application - Java</h3>
+                                <h4 class="carousel-content-p"><i>Objectif : </i>Réalisation d'une application de gestion de comptes bancaires de dépôt pour des clients déjà créés, avec pour fonctionnalités de pouvoir débiter, créditer ou réaliser un virement.</h4>
+                                <h4 class="carousel-content-p">
+                                    <i>Apprentissages : </i><br>
+                                    <span style="color:red;">•</span> Développer des interfaces utilisateurs<br>
+                                    <span style="color:red;">•</span> Implémenter des conceptions simples<br>
+                                    <span style="color:blue;">•</span> Formaliser les besoins du client<br>
+                                    <span style="color:blue;">•</span> Définir une démarche de suivi de projet<br>
+                                </h4>
+                                <div class="link-container">
+                                    <a class="custom-link" href="https://github.com/Mazlai/SAE2.01-2.05">
+                                        <img src="./images/purple-github.png" alt="Purple Github">
+                                        GitHub
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <h1 class="pos-titles"> <span id="sixth-carac">&#10149;</span> <span id="title-6"></span></h1>
+
+                    <section id="cd-timeline" class="cd-container" data-aos="flip-up" data-aos-delay="500">
+                        <div class="cd-timeline-block">
+                            <div class="cd-timeline-img cd-competence-1 comp-1">
+                                <i class="fa-regular fa-eye fa-shake"></i>
+                            </div>
+                
+                            <div class="cd-timeline-content" id="timelineContent-1">
+                                <h3><span class="project-context-2">Projet :</span> Réalisation d'une application réelle avec un client réel, en équipe</h3>
+                                <div class="timeline-content-info">
+                                    <span class="timeline-content-info-title">
+                                        <i class="fa fa-certificate" aria-hidden="true"></i>
+                                        Récent
+                                    </span>
+                                    <span class="timeline-content-info-date">
+                                        <i class="fa fa-calendar-o" aria-hidden="true"></i>
+                                        Sept. - Déc. 2023
+                                    </span>
+                                </div>
+                                <p><i>Objectif : </i>Réaliser un back-office permettant à l'administrateur du site de modifier ses données sans avoir à modifier le code source.</p>
+                                <p><i>Apprentissages :</i><br>
+                                    <span style="color:red;">•</span> Faire évoluer une application existante.<br>
+                                    <span style="color:orange;">•</span> Profiler, analyser et justifier le comportement d'un code existant.<br>
+                                    <span style="color:darkviolet;">•</span> Organiser et partager une veille technologique et informationnelle.<br>
+                                </p>
+                                <div class="link-container">
+                                    <a class="custom-link" href="https://github.com/Mazlai/SAE-S5-Slave-Narratives">
+                                        <img src="./images/purple-github.png" alt="Purple Github">
+                                        GitHub
+                                    </a>
+                                    <a class="custom-link" href="http://saes5.chaounne.xyz/">
+                                        <img src="./images/favicon.svg" alt="Logo Livre">
+                                        Accès au site web
+                                    </a>
+                                </div>
+                                <div class="content-skills">
+                                    <p><img src="./images/html5.png" alt="html5"> HTML5</p>
+                                    <p><img src="./images/css3.png" alt="css3"> CSS3</p>
+                                    <p><img src="./images/js.png" alt="js"> JavaScript</p>
+                                    <p><img src="./images/mysql.png" alt="mysql"> MySQL</p>
+                                    <p><img src="./images/codeigniter.png" alt="codeigniter"> CodeIgniter</p>
+                                    <p><img src="./images/powershell.png" alt="powershell"> PowerShell</p>
+                                </div>
+                            </div> 
+                        </div>
+                
+                        <div class="cd-timeline-block">
+                            <div class="cd-timeline-img cd-competence-4 comp-2">
+                                <i class="fa-regular fa-eye fa-shake"></i>
+                            </div>
+                
+                            <div class="cd-timeline-content" id="timelineContent-2">
+                                <h3><span class="project-context-2">Projet :</span> Normalisation d'une base de données</h3>
+                                <p><i>Objectif : </i>Écrire des tests PHP sur une base de données à normaliser sous la forme 3NF+.</p>
+                                <p><i>Apprentissages :</i><br>
+                                    <span style="color:red;">•</span> Vérifier et valider la qualité de l'application par les tests.<br>
+                                    <span style="color:lightgreen;">•</span> Manipuler des données hétérogènes.<br>
+                                    <span style="color:lightgreen;">•</span> Organiser la restitution de données à travers la programmation et la visualisation.<br>
+                                </p>
+                                <div class="link-container">
+                                    <a class="custom-link" href="https://github.com/Mazlai/SAE4.0">
+                                        <img src="./images/purple-github.png" alt="Purple Github">
+                                        GitHub
+                                    </a>
+                                </div>
+                                <div class="content-skills">
+                                    <p><img src="./images/php.png" alt="php"> PHP</p>
+                                    <p><img src="./images/mysql.png" alt="mysql"> MySQL</p>
+                                </div>
+                                <span class="cd-date">21/03/2023</span>
+                            </div> 
+                        </div>
+                        
+                        <div class="cd-timeline-block">
+                            <div class="cd-timeline-img cd-competence-2 comp-3">
+                                <i class="fa-regular fa-eye fa-shake"></i>
+                            </div>
+                
+                            <div class="cd-timeline-content" id="timelineContent-3">
+                                <h3><span class="project-context-2">Projet :</span> Comparaison d'approches algorithmiques poussées</h3>
+                                <p><i>Objectif : </i>Approfondir la réflexion sur l'approche algorithmique en évaluant des solutions diverses selon des critères de comparaison.</p>
+                                <p><i>Apprentissage :</i><br>
+                                    <span style="color:orange;">•</span> Analyser un problème avec méthode (structure de données, découpage en éléments algorithmiques simples, etc.).<br>
+                                </p>
+                                <div class="link-container">
+                                    <a class="custom-link" href="https://github.com/Mazlai/SAE2.02">
+                                        <img src="./images/purple-github.png" alt="Purple Github">
+                                        GitHub
+                                    </a>
+                                </div>
+                                <div class="content-skills">
+                                    <p><img src="./images/java.png" alt="java"> Java</p>
+                                    <p><img src="./images/python.png" alt="python"> Python</p>
+                                    <p><img src="./images/c.png" alt="c"> C</p>
+                                </div>
+                                <span class="cd-date">17/06/2022</span>
+                            </div> 
+                        </div>
+
+                        <div class="cd-timeline-block">
+                            <div class="cd-timeline-img cd-competence-5 comp-4">
+                                <i class="fa-regular fa-eye fa-shake"></i>
+                            </div>
+                
+                            <div class="cd-timeline-content" id="timelineContent-4">
+                                <h3><span class="project-context-2">Projet :</span> Organisation d'un travail en équipe</h3>
+                                <p><i>Objectif : </i>Présenter un bilan de projet ainsi que les stratégies mises en oeuvre pour un travail d'équipe efficace.</p>
+                                <p><i>Apprentissage :</i><br>
+                                    <span style="color:darkviolet;">•</span> Acquérir les compétences interpersonnelles pour travailler en équipe.<br>
+                                </p>
+                                <div class="link-container">
+                                    <a class="custom-link" href="https://github.com/Mazlai/SAE2.06">
+                                        <img src="./images/purple-github.png" alt="Purple Github">
+                                        GitHub
+                                    </a>
+                                </div>
+                                <span class="cd-date">13/06/2022</span>
+                            </div> 
+                        </div>
+
+                        <div class="cd-timeline-block">
+                            <div class="cd-timeline-img cd-competence-4 comp-5">
+                                <i class="fa-regular fa-eye fa-shake"></i>
+                            </div>
+                
+                            <div class="cd-timeline-content" id="timelineContent-5">
+                                <h3><span class="project-context-2">Projet :</span> Exploitation d'une base de données</h3>
+                                <p><i>Objectif : </i>Analyser une base de données déjà existante et en implémenter une version conforme et efficace.</p>
+                                <p><i>Apprentissage :</i><br>
+                                    <span style="color:lightgreen;">•</span> Visualiser des données et interroger une base de données relationnelle en requêtes directes.<br>
+                                </p>
+                                <div class="link-container">
+                                    <a class="custom-link" href="https://github.com/Mazlai/SAE2.04">
+                                        <img src="./images/purple-github.png" alt="Purple Github">
+                                        GitHub
+                                    </a>
+                                </div>
+                                <div class="content-skills">
+                                    <p><img src="./images/oracle.png" alt="oracle"> Oracle SQL</p>
+                                    <p><img src="./images/windesign.png" alt="windesign"> Win'Design</p>
+                                    <p><img src="./images/python.png" alt="python"> Python</p>
+                                </div>
+                                <span class="cd-date">05/06/2022</span>
+                            </div> 
+                        </div>
+                
+                        <div class="cd-timeline-block">
+                            <div class="cd-timeline-img cd-competence-3 comp-6">
+                                <i class="fa-regular fa-eye fa-shake"></i>
+                            </div> 
+                
+                            <div class="cd-timeline-content" id="timelineContent-6">
+                                <h3><span class="project-context-2">Projet :</span> Installation d'un service réseau</h3>
+                                <p><i>Objectif : </i>Paramétrer et installer un serveur Apache pour le site web précédemment réalisé <a id="timeline-hyperlink" href="https://mazlai.github.io/SAE1.06/pages/index.html">ci-joint.</a></i></p>
+                                <p><i>Apprentissage :</i><br>
+                                    <span style="color:gold;">•</span> Identifier les différents composants (matériels et logiciels) d'un service réseau.<br>
+                                </p>
+                                <div class="link-container">
+                                    <a class="custom-link" href="https://github.com/Mazlai/SAE2.03">
+                                        <img src="./images/purple-github.png" alt="Purple Github">
+                                        GitHub
+                                    </a>
+                                </div>
+                                <div class="content-skills">
+                                    <p><img src="./images/unix.png" alt="unix"> UNIX</p>
+                                    <p><img src="./images/apache.svg" alt="apache"> Apache</p>
+                                </div>
+                                <span class="cd-date">22/04/2022</span>
+                            </div> 
+                        </div> 
+                
+                        <div class="cd-timeline-block">
+                            <div class="cd-timeline-img cd-competence-4 comp-7">
+                                <i class="fa-regular fa-eye fa-shake"></i>
+                            </div> 
+                
+                            <div class="cd-timeline-content" id="timelineContent-7">
+                                <h3><span class="project-context-2">Projet :</span> Création d'une base de données</h3>
+                                <p><i>Objectif : </i>Concevoir une base de données pour les données recueillies et vérifier leur conformité.</p>
+                                <p><i>Apprentissage :</i><br>
+                                    <span style="color:lightgreen;">•</span> Concevoir, mettre à jour et interroger une base de données relationnelle à partir d'un cahier des charges.<br>
+                                </p>
+                                <div class="link-container">
+                                    <a class="custom-link" href="https://github.com/Mazlai/SAE1.04">
+                                        <img src="./images/purple-github.png" alt="Purple Github">
+                                        GitHub
+                                    </a>
+                                </div>
+                                <div class="content-skills">
+                                    <p><img src="./images/windesign.png" alt="windesign"> Win'Design</p>
+                                    <p><img src="./images/oracle.png" alt="oracle"> Oracle SQL</p>
+                                </div>
+                                <span class="cd-date">23/01/2022</span>
+                            </div> 
+                        </div> 
+                
+                        <div class="cd-timeline-block">
+                            <div class="cd-timeline-img cd-competence-2 comp-8">
+                                <i class="fa-regular fa-eye fa-shake"></i>
+                            </div> 
+                
+                            <div class="cd-timeline-content" id="timelineContent-8">
+                                <h3><span class="project-context-2">Projet :</span> Comparaison d'approches algorithmiques</h3>
+                                <p><i>Objectif : </i>Implémenter des algorithmes de recherche tout en étudiant la complexité de ces derniers.</p>
+                                <p><i>Apprentissage :</i><br>
+                                    <span style="color:orange;">•</span> Comparer des algorithmes pour des problèmes classiques (tris simple, recherche).
+                                </p>
+                                <div class="link-container">
+                                    <a class="custom-link" href="https://github.com/Mazlai/SAE1.02">
+                                        <img src="./images/purple-github.png" alt="Purple Github">
+                                        GitHub
+                                    </a>
+                                </div>
+                                <div class="content-skills">
+                                    <p><img src="./images/java.png" alt="java"> Java</p>
+                                </div>
+                                <span class="cd-date">23/01/2022</span>
+                            </div> 
+                        </div> 
+
+                        <div class="cd-timeline-block">
+                            <div class="cd-timeline-img cd-competence-6 comp-9">
+                                <i class="fa-regular fa-eye fa-shake"></i>
+                            </div> 
+                
+                            <div class="cd-timeline-content" id="timelineContent-9">
+                                <h3><span class="project-context-2">Projet :</span> Découverte d'un environnement économique et écologique</h3>
+                                <p><i>Objectif : </i>Développer un site web éco-conçu pour comparer les stratégies des organisations impliquées dans la GreenTech.</p>
+                                <p><i>Apprentissage :</i><br>
+                                    <span style="color:darkviolet;">•</span> Appréhender l'écosystème numérique.<br>
+                                </p>
+                                <div class="link-container">
+                                    <a class="custom-link" href="https://github.com/Mazlai/SAE1.06">
+                                        <img src="./images/purple-github.png" alt="Purple Github">
+                                        GitHub
+                                    </a>
+                                    <a class="custom-link" href="https://mazlai.github.io/SAE1.06/pages/index.html">
+                                        <img src="./images/index_bg.jpg" alt="Logo GreenTech">
+                                        Accès au site web
+                                    </a>
+                                </div>
+                                <div class="content-skills">
+                                    <p><img src="./images/html5.png" alt="html5"> HTML5</p>
+                                    <p><img src="./images/css3.png" alt="css3"> CSS3</p>
+                                    <p><img src="./images/js.png" alt="js"> JavaScript</p>
+                                </div>
+                                <span class="cd-date">14/12/2021</span>
+                            </div> 
+                        </div>
+                
+                        <div class="cd-timeline-block">
+                            <div class="cd-timeline-img cd-competence-1 comp-10">
+                                <i class="fa-regular fa-eye fa-shake"></i>
+                            </div> 
+                
+                            <div class="cd-timeline-content" id="timelineContent-10">
+                                <h3><span class="project-context-2">Projet :</span> Implémentation d'un besoin client</h3>
+                                <p><i>Objectif : </i>Réaliser un programme Java permettant l'analyse d'une liste d'étudiants et d'en tirer au sort l'un d'entre-eux.</p>
+                                <p><i>Apprentissage :</i><br>
+                                    <span style="color:red;">•</span> Faire des essais et évaluer leurs résultats.<br>
+                                </p>
+                                <div class="link-container">
+                                    <a class="custom-link" href="https://github.com/Mazlai/SAE1.01">
+                                        <img src="./images/purple-github.png" alt="Purple Github">
+                                        GitHub
+                                    </a>
+                                </div>
+                                <div class="content-skills">
+                                    <p><img src="./images/java.png" alt="java"> Java</p>
+                                    <p><img src="./images/javafx.png" alt="javafx"> JavaFX</p>
+                                </div>
+
+                                <span class="cd-date">30/10/2021</span>
+                            </div> 
+                        </div>
+
+                        <div class="cd-timeline-block">
+                            <div class="cd-timeline-img cd-competence-5 comp-11">
+                                <i class="fa-regular fa-eye fa-shake"></i>
+                            </div> 
+                
+                            <div class="cd-timeline-content" id="timelineContent-11">
+                                <h3><span class="project-context-2">Projet :</span> Recueil de besoins</h3>
+                                <p><i>Objectif : </i>Chercher une organisation et savoir recueillir puis retransmettre le besoin du client pour un projet (application, produit, activité etc.) donné.</p>
+                                <p><i>Apprentissage :</i><br>
+                                    <span style="color:blue;">•</span> Appréhender les besoins du client.<br>
+                                </p>
+                                <div class="link-container">
+                                    <a class="custom-link" href="https://github.com/Mazlai/SAE1.05">
+                                        <img src="./images/purple-github.png" alt="Purple Github">
+                                        GitHub
+                                    </a>
+                                </div>
+                                <span class="cd-date">29/10/2021</span>
+                            </div> 
+                        </div>
+                    </section>
+                    
+                    <p class="legend"><i style="color:lightblue;" class="fa-solid fa-circle-info"></i> <i style="color:lightblue;"><u>Précision</u></i> : L'ensemble des puces colorées font référence aux couleurs des compétences illustrées ci-dessus.</p>
+                    <h1 class="pos-titles">&#8205;</h1>
+                </div>
+
+            </article>
+
+            <article class="container-5" id="fifth-anchor">
+                <div id="all-content-5" data-aos="fade-zoom-in" data-aos-delay="30">
                     <div id="form-contact">
                         <h1 id="form-title"> <span id="form-carac">&#10149;</span> Contactez-moi</h1>
                         <hr>
@@ -113,7 +594,6 @@
                         <br>
                         <textarea id="last-champ" name="commentaire" autocomplete="off" placeholder="Votre commentaire :" required maxlength="400"></textarea>
                         <br>
-                        <!--button id="souscrire" onclick='refreshPage()'>Envoyer</button-->
                         <button id="souscrire">Envoyer</button>
                     </div>
                 </div>
@@ -127,6 +607,10 @@
             </div>
         </footer>
 
+    <script>
+        AOS.init();
+    </script>
+    <script type="text/javascript" src="particles.js"></script>
     </body>
 
 </html>
