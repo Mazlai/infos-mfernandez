@@ -43,7 +43,7 @@ document.addEventListener('DOMContentLoaded', function() {
     });
 
     // Définissez le nombre total de compétences
-    var totalCompetences = 11;
+    var totalCompetences = 12;
 
     // Utilisez une boucle pour créer les sélecteurs et les écouteurs d'événements
     for (var i = 1; i <= totalCompetences; i++) {
