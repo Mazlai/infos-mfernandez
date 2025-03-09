@@ -12,11 +12,9 @@
         <!-- CSS -->
         <link rel="stylesheet" href="style.css">
         <link rel="icon" href="./images/mf-logo.ico">
-        <link rel="stylesheet" href="./flickity/flickity.css" media="screen">
         <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 
         <!-- JS -->
-        <script src="./flickity/flickity.pkgd.min.js"></script>
         <script type="text/javascript" src="script.js"></script>
         <script type="text/javascript" src="dynamic.js"></script>
         <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
@@ -41,6 +39,7 @@
         </header>
         
         <section id="index-section">
+            <!-- Base line -->
             <article class="container-1">
 
                 <div class="space">
@@ -62,13 +61,13 @@
 
                                 <div class="contact-container">
                                     <a class="links" href="https://www.linkedin.com/in/mickael-fernandez-mf/">
-                                        <img class="images-container" src="./images/linkedin.png" alt="logo-blanc-linkedin">
+                                        <img class="images-container" src="./images/reseaux/linkedin.png" alt="logo-blanc-linkedin">
                                     </a>
                                     <a class="links" href="https://www.instagram.com/mf.mazlai/?hl=fr">
-                                        <img class="images-container" src="./images/instagram.png" alt="logo-blanc-instagram">
+                                        <img class="images-container" src="./images/reseaux/instagram.png" alt="logo-blanc-instagram">
                                     </a>
                                     <a class="links" href="https://github.com/Mazlai">
-                                        <img class="images-container" src="./images/github.png" alt="logo-blanc-github">
+                                        <img class="images-container" src="./images/reseaux/github.png" alt="logo-blanc-github">
                                     </a>
                                 </div>
         
@@ -85,6 +84,7 @@
                 </div>
             </article>    
 
+            <!-- Présentation -->
             <article class="container-2" id="second-anchor">
 
                 <div id="all-content-2">
@@ -103,7 +103,7 @@
                             <a href="https://deodat.mon-ent-occitanie.fr/">
                                 <div class="card-content">
                                     <div class="card-image">
-                                        <img src="./images/deodat.jpg" alt="Déodat">
+                                        <img src="./images/parcours/deodat-logo.jpg" alt="Déodat">
                                     </div>
                                     <div class="card-info">
                                         <h3>Baccalauréat Général - Maths & NSI</h3>
@@ -124,7 +124,7 @@
                             <a href="https://www.iut-blagnac.fr/fr/">
                                 <div class="card-content">
                                     <div class="card-image">
-                                        <img src="./images/Logo_IUT_Blagnac.png" alt="Blagnac">
+                                        <img src="./images/parcours/iut-logo.png" alt="Blagnac">
                                     </div>
                                     <div class="card-info">
                                         <h3>BUT Informatique - Réalisation d'applications (BAC+3)</h3>
@@ -144,7 +144,7 @@
                             <a href="https://www.ynov.com/campus/toulouse">
                                 <div class="card-content">
                                     <div class="card-image">
-                                        <img src="./images/ynov-logo.jpg" alt="Ynov Campus">
+                                        <img src="./images/parcours/ynov-logo.jpg" alt="Ynov Campus">
                                     </div>
                                     <div class="card-info">
                                         <h3>Mastère - Expert en développement web (BAC+5)</h3>
@@ -172,6 +172,7 @@
 
             </article>
 
+            <!-- Compétences -->
             <article class="container-3" id="third-anchor">
 
                 <div id="all-content-3"> 
@@ -227,6 +228,7 @@
 
             </article>
 
+            <!-- Projets -->
             <article class="container-4" id="fourth-anchor">
 
                 <div id="all-content-4">
@@ -238,84 +240,141 @@
                     <br><br><br>
 
                     <!-- Carrousel de projets -->
-                    <div class="carousel" data-flickity='{ "wrapAround": true, "fullscreen": true, "lazyLoad":true }'>
-
-                        <div class="carousel-cell">
-                            <div class="carousel-cell-image">
-                                <img id="first-image-carousel" data-flickity-lazyload="./images/logo-rssb.png" alt="RSSB">
+                    <div class="projects-carousel">
+                        <!-- Flèches de navigation -->
+                        <button class="carousel-arrow prev-arrow">
+                            <i class="fa-solid fa-chevron-left"></i>
+                        </button>
+                        <button class="carousel-arrow next-arrow">
+                            <i class="fa-solid fa-chevron-right"></i>
+                        </button>
+                    
+                        <!-- Conteneur du carrousel -->
+                        <div class="carousel-container">
+                            <!-- Projet 1: RSSB -->
+                            <div class="carousel-slide active">
+                                <div class="project-card">
+                                    <div class="project-image">
+                                        <img src="./images/projets/logo-rssb.png" alt="RSSB">
+                                    </div>
+                                    <div class="project-content">
+                                        <div class="project-header">
+                                            <span class="project-badge stage">Stage</span>
+                                            <h3><u>RSSB</u> • Site web</h3>
+                                        </div>
+                                        
+                                        <div class="project-description">
+                                            <p class="objective"><i>Objectif : </i>Création et refonte d'un site web dynamique facilitant des démarches répétitives et contraignantes (temps de bénévolat, gestion des activités etc.).</p>
+                                            
+                                            <div class="learnings">
+                                                <p><i>Apprentissages : </i></p>
+                                                <ul>
+                                                    <li class="learning-item red">Appliquer des principes d'accessibilité et d'ergonomie</li>
+                                                    <li class="learning-item green">Optimiser les modèles de données de l'association</li>
+                                                    <li class="learning-item purple">Formaliser les besoins et les contraintes du client</li>
+                                                    <li class="learning-item blue">Rendre compte de son activité professionnelle</li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                        
+                                        <div class="project-links">
+                                            <a href="https://github.com/Mazlai/RSSB" class="project-link github">
+                                                <img src="./images/purple-github.png" alt="GitHub">
+                                                <span>GitHub</span>
+                                            </a>
+                                            <a href="https://reseausocialsolidaireblagnac.org/" class="project-link website">
+                                                <img src="./images/projets/logo-rssb.png" alt="Logo RSSB">
+                                                <span>Accès au site web</span>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
                             </div>
-                            <div class="carousel-cell-text">
-                                <h3 class="carousel-content"><span class="project-context-1">Stage :</span> <u>RSSB</u> • Site web</h3>
-                                <h4 class="carousel-content-p"><i>Objectif : </i>Création et refonte d'un site web dynamique facilitant des démarches répétitives et contraignantes (temps de bénévolat, gestion des activités etc.).</h4>
-                                <h4 class="carousel-content-p">
-                                    <i>Apprentissages : </i><br>
-                                    <span style="color:red;">•</span> Appliquer des principes d'accessibilité et d'ergonomie<br>
-                                    <span style="color:lightgreen;">•</span> Optimiser les modèles de données de l'association<br>
-                                    <span style="color:darkviolet;">•</span> Formaliser les besoins et les contraintes du client<br>
-                                    <span style="color:blue;">•</span> Rendre compte de son activité professionnelle<br>
-                                </h4>
-                                <div class="link-container">
-                                    <a class="custom-link" href="https://github.com/Mazlai/RSSB">
-                                        <img src="./images/purple-github.png" alt="Purple Github">
-                                        GitHub
-                                    </a>
-                                    <a class="custom-link" href="https://reseausocialsolidaireblagnac.org/">
-                                        <img src="./images/logo-rssb.png" alt="Logo RSSB">
-                                        Accès au site web
-                                    </a>
+                    
+                            <!-- Projet 2: Art'i'Chaud•e -->
+                            <div class="carousel-slide">
+                                <div class="project-card">
+                                    <div class="project-image">
+                                        <img src="./images/projets/artichaude.jpg" alt="Artichaude">
+                                    </div>
+                                    <div class="project-content">
+                                        <div class="project-header">
+                                            <span class="project-badge projet">Projet</span>
+                                            <h3><u>Art'i'Chaud•e</u> • Site web & application Java/Python</h3>
+                                        </div>
+                                        
+                                        <div class="project-description">
+                                            <p class="objective"><i>Objectif : </i>Mise en place d'un site internet de commerce en ligne d'oeuvres d'art digitales et création d'une application permettant le paramétrage de données associées à un entrepôt (alertes, capteurs).</p>
+                                            
+                                            <div class="learnings">
+                                                <p><i>Apprentissages : </i></p>
+                                                <ul>
+                                                    <li class="learning-item gold">Concevoir des applications communicantes</li>
+                                                    <li class="learning-item green">Assurer la sécurité des données (intégrité)</li>
+                                                    <li class="learning-item purple">Définir une démarche de suivi de projet</li>
+                                                    <li class="learning-item blue">Savoir travailler dans une équipe informatique</li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                        
+                                        <div class="project-links">
+                                            <a href="https://github.com/Mazlai/SAE3.01" class="project-link github">
+                                                <img src="./images/purple-github.png" alt="GitHub">
+                                                <span>GitHub</span>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                    
+                            <!-- Projet 3: DailyBank -->
+                            <div class="carousel-slide">
+                                <div class="project-card">
+                                    <div class="project-image">
+                                        <img src="./images/projets/dailybank.png" alt="DailyBank">
+                                    </div>
+                                    <div class="project-content">
+                                        <div class="project-header">
+                                            <span class="project-badge projet">Projet</span>
+                                            <h3><u>DailyBank</u> • Application - Java</h3>
+                                        </div>
+                                        
+                                        <div class="project-description">
+                                            <p class="objective"><i>Objectif : </i>Réalisation d'une application de gestion de comptes bancaires de dépôt pour des clients déjà créés, avec pour fonctionnalités de pouvoir débiter, créditer ou réaliser un virement.</p>
+                                            
+                                            <div class="learnings">
+                                                <p><i>Apprentissages : </i></p>
+                                                <ul>
+                                                    <li class="learning-item red">Développer des interfaces utilisateurs</li>
+                                                    <li class="learning-item red">Implémenter des conceptions simples</li>
+                                                    <li class="learning-item purple">Formaliser les besoins du client</li>
+                                                    <li class="learning-item purple">Définir une démarche de suivi de projet</li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                        
+                                        <div class="project-links">
+                                            <a href="https://github.com/Mazlai/SAE2.01-2.05" class="project-link github">
+                                                <img src="./images/purple-github.png" alt="GitHub">
+                                                <span>GitHub</span>
+                                            </a>
+                                        </div>
+                                    </div>
                                 </div>
                             </div>
                         </div>
-
-                        <div class="carousel-cell">
-                            <div class="carousel-cell-image">
-                                <img id="second-image-carousel" data-flickity-lazyload="./images/artichaude.jpg" alt="Artichaude">
-                            </div>
-                            <div class="carousel-cell-text">
-                                <h3 class="carousel-content"><span class="project-context-2">Projet :</span> <u>Art'i'Chaud•e</u> • Site web & application Java/Python</h3>
-                                <h4 class="carousel-content-p"><i>Objectif : </i>Mise en place d'un site internet de commerce en ligne d'oeuvres d'art digitales et création d'une application permettant le paramétrage de données associées à un entrepôt (alertes, capteurs).</h4>
-                                <h4 class="carousel-content-p">
-                                    <i>Apprentissages : </i><br>
-                                    <span style="color:gold;">•</span> Concevoir des applications communicantes<br>
-                                    <span style="color:lightgreen;">•</span> Assurer la sécurité des données (intégrité)<br>
-                                    <span style="color:darkviolet;">•</span> Définir une démarche de suivi de projet<br>
-                                    <span style="color:blue;">•</span> Savoir travailler dans une équipe informatique<br>
-                                </h4>
-                                <div class="link-container">
-                                    <a class="custom-link" href="https://github.com/Mazlai/SAE3.01">
-                                        <img src="./images/purple-github.png" alt="Purple Github">
-                                        GitHub
-                                    </a>
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="carousel-cell">
-                            <div class="carousel-cell-image">
-                                <img id="third-image-carousel" data-flickity-lazyload="./images/dailybank.png" alt="DailyBank">
-                            </div>
-                            <div class="carousel-cell-text">
-                                <h3 class="carousel-content"><span class="project-context-2">Projet :</span> <u>DailyBank</u> • Application - Java</h3>
-                                <h4 class="carousel-content-p"><i>Objectif : </i>Réalisation d'une application de gestion de comptes bancaires de dépôt pour des clients déjà créés, avec pour fonctionnalités de pouvoir débiter, créditer ou réaliser un virement.</h4>
-                                <h4 class="carousel-content-p">
-                                    <i>Apprentissages : </i><br>
-                                    <span style="color:red;">•</span> Développer des interfaces utilisateurs<br>
-                                    <span style="color:red;">•</span> Implémenter des conceptions simples<br>
-                                    <span style="color:darkviolet;">•</span> Formaliser les besoins du client<br>
-                                    <span style="color:darkviolet;">•</span> Définir une démarche de suivi de projet<br>
-                                </h4>
-                                <div class="link-container">
-                                    <a class="custom-link" href="https://github.com/Mazlai/SAE2.01-2.05">
-                                        <img src="./images/purple-github.png" alt="Purple Github">
-                                        GitHub
-                                    </a>
-                                </div>
-                            </div>
+                    
+                        <!-- Indicateurs de position (dots) -->
+                        <div class="carousel-indicators">
+                            <span class="indicator active" data-index="0"></span>
+                            <span class="indicator" data-index="1"></span>
+                            <span class="indicator" data-index="2"></span>
                         </div>
                     </div>
                     
                     <h1 class="pos-titles"> <span id="sixth-carac">&#10149;</span> <span id="title-6"></span></h1>
 
+                    <!-- Projets classés par ancienneté -->
                     <section id="cd-timeline" class="cd-container" data-aos="flip-up" data-aos-delay="500">
                         <div class="cd-timeline-block">
                             <div class="cd-timeline-img cd-competence-1 comp-1">
@@ -346,17 +405,17 @@
                                         GitHub
                                     </a>
                                     <a class="custom-link" href="http://saes5.chaounne.xyz/">
-                                        <img src="./images/favicon.svg" alt="Logo Livre">
+                                        <img src="./images/projets/slavenarratives.svg" alt="Logo Livre">
                                         Accès au site web
                                     </a>
                                 </div>
                                 <div class="content-skills">
-                                    <p><img src="./images/html5.png" alt="html5"> HTML5</p>
-                                    <p><img src="./images/css3.png" alt="css3"> CSS3</p>
-                                    <p><img src="./images/js.png" alt="js"> JavaScript</p>
-                                    <p><img src="./images/mysql.png" alt="mysql"> MySQL</p>
-                                    <p><img src="./images/codeigniter.png" alt="codeigniter"> CodeIgniter</p>
-                                    <p><img src="./images/powershell.png" alt="powershell"> PowerShell</p>
+                                    <p><img src="./images/technologies/html5.png" alt="html5"> HTML5</p>
+                                    <p><img src="./images/technologies/css3.png" alt="css3"> CSS3</p>
+                                    <p><img src="./images/technologies/js.png" alt="js"> JavaScript</p>
+                                    <p><img src="./images/technologies/mysql.png" alt="mysql"> MySQL</p>
+                                    <p><img src="./images/technologies/codeigniter.png" alt="codeigniter"> CodeIgniter</p>
+                                    <p><img src="./images/technologies/powershell.png" alt="powershell"> PowerShell</p>
                                 </div>
                             </div> 
                         </div>
@@ -381,8 +440,8 @@
                                     </a>
                                 </div>
                                 <div class="content-skills">
-                                    <p><img src="./images/php.png" alt="php"> PHP</p>
-                                    <p><img src="./images/mysql.png" alt="mysql"> MySQL</p>
+                                    <p><img src="./images/technologies/php.png" alt="php"> PHP</p>
+                                    <p><img src="./images/technologies/mysql.png" alt="mysql"> MySQL</p>
                                 </div>
                                 <span class="cd-date">21/03/2023</span>
                             </div> 
@@ -406,9 +465,9 @@
                                     </a>
                                 </div>
                                 <div class="content-skills">
-                                    <p><img src="./images/java.png" alt="java"> Java</p>
-                                    <p><img src="./images/python.png" alt="python"> Python</p>
-                                    <p><img src="./images/c.png" alt="c"> C</p>
+                                    <p><img src="./images/technologies/java.png" alt="java"> Java</p>
+                                    <p><img src="./images/technologies/python.png" alt="python"> Python</p>
+                                    <p><img src="./images/technologies/c.png" alt="c"> C</p>
                                 </div>
                                 <span class="cd-date">17/06/2022</span>
                             </div> 
@@ -453,9 +512,9 @@
                                     </a>
                                 </div>
                                 <div class="content-skills">
-                                    <p><img src="./images/oracle.png" alt="oracle"> Oracle SQL</p>
-                                    <p><img src="./images/windesign.png" alt="windesign"> Win'Design</p>
-                                    <p><img src="./images/python.png" alt="python"> Python</p>
+                                    <p><img src="./images/technologies/oracle.png" alt="oracle"> Oracle SQL</p>
+                                    <p><img src="./images/technologies/windesign.png" alt="windesign"> Win'Design</p>
+                                    <p><img src="./images/technologies/python.png" alt="python"> Python</p>
                                 </div>
                                 <span class="cd-date">05/06/2022</span>
                             </div> 
@@ -479,8 +538,8 @@
                                     </a>
                                 </div>
                                 <div class="content-skills">
-                                    <p><img src="./images/unix.png" alt="unix"> UNIX</p>
-                                    <p><img src="./images/apache.svg" alt="apache"> Apache</p>
+                                    <p><img src="./images/technologies/unix.png" alt="unix"> UNIX</p>
+                                    <p><img src="./images/technologies/apache.svg" alt="apache"> Apache</p>
                                 </div>
                                 <span class="cd-date">22/04/2022</span>
                             </div> 
@@ -504,7 +563,7 @@
                                     </a>
                                 </div>
                                 <div class="content-skills">
-                                    <p><img src="./images/Virtualbox_logo.png" alt="vbox"> VirtualBox</p>
+                                    <p><img src="./images/technologies/virtualbox.png" alt="vbox"> VirtualBox</p>
                                 </div>
                                 <span class="cd-date">15/03/2022</span>
                             </div> 
@@ -528,8 +587,8 @@
                                     </a>
                                 </div>
                                 <div class="content-skills">
-                                    <p><img src="./images/windesign.png" alt="windesign"> Win'Design</p>
-                                    <p><img src="./images/oracle.png" alt="oracle"> Oracle SQL</p>
+                                    <p><img src="./images/technologies/windesign.png" alt="windesign"> Win'Design</p>
+                                    <p><img src="./images/technologies/oracle.png" alt="oracle"> Oracle SQL</p>
                                 </div>
                                 <span class="cd-date">23/01/2022</span>
                             </div> 
@@ -553,7 +612,7 @@
                                     </a>
                                 </div>
                                 <div class="content-skills">
-                                    <p><img src="./images/java.png" alt="java"> Java</p>
+                                    <p><img src="./images/technologies/java.png" alt="java"> Java</p>
                                 </div>
                                 <span class="cd-date">23/01/2022</span>
                             </div> 
@@ -576,14 +635,14 @@
                                         GitHub
                                     </a>
                                     <a class="custom-link" href="https://mazlai.github.io/SAE1.06/pages/index.html">
-                                        <img src="./images/index_bg.jpg" alt="Logo GreenTech">
+                                        <img src="./images/projets/greenit.jpg" alt="Logo GreenTech">
                                         Accès au site web
                                     </a>
                                 </div>
                                 <div class="content-skills">
-                                    <p><img src="./images/html5.png" alt="html5"> HTML5</p>
-                                    <p><img src="./images/css3.png" alt="css3"> CSS3</p>
-                                    <p><img src="./images/js.png" alt="js"> JavaScript</p>
+                                    <p><img src="./images/technologies/html5.png" alt="html5"> HTML5</p>
+                                    <p><img src="./images/technologies/css3.png" alt="css3"> CSS3</p>
+                                    <p><img src="./images/technologies/js.png" alt="js"> JavaScript</p>
                                 </div>
                                 <span class="cd-date">14/12/2021</span>
                             </div> 
@@ -607,8 +666,8 @@
                                     </a>
                                 </div>
                                 <div class="content-skills">
-                                    <p><img src="./images/java.png" alt="java"> Java</p>
-                                    <p><img src="./images/javafx.png" alt="javafx"> JavaFX</p>
+                                    <p><img src="./images/technologies/java.png" alt="java"> Java</p>
+                                    <p><img src="./images/technologies/javafx.png" alt="javafx"> JavaFX</p>
                                 </div>
 
                                 <span class="cd-date">30/10/2021</span>

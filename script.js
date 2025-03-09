@@ -21,10 +21,7 @@ function scrollToTop() {
 }
 
 function handleArrows() {
-    // Vous pouvez aussi utiliser window.matchMedia pour plus de précision
     const isMobile = window.innerWidth <= 1070;
-    
-    // Sélectionner toutes les flèches
     const horizontalArrows = document.querySelectorAll('.horizontal-arrow');
     const verticalArrows = document.querySelectorAll('.vertical-arrow');
     
@@ -49,8 +46,100 @@ function handleArrows() {
     }
 }
 
+function initCarousel() {
+    const container = document.querySelector('.carousel-container');
+    const slides = document.querySelectorAll('.carousel-slide');
+    const prevBtn = document.querySelector('.prev-arrow');
+    const nextBtn = document.querySelector('.next-arrow');
+    const indicators = document.querySelectorAll('.indicator');
+    
+    let currentIndex = 0;
+    const slideCount = slides.length;
+
+    // Fonction pour actualiser l'affichage du carrousel
+    function updateCarousel() {
+        // Mettre à jour la position du conteneur
+        container.style.transform = `translateX(-${currentIndex * 100}%)`;
+        
+        // Mettre à jour les classes actives
+        slides.forEach((slide, index) => {
+            if (index === currentIndex) {
+                slide.classList.add('active');
+            } else {
+                slide.classList.remove('active');
+            }
+        });
+        
+        // Mettre à jour les indicateurs
+        indicators.forEach((dot, index) => {
+            if (index === currentIndex) {
+                dot.classList.add('active');
+            } else {
+                dot.classList.remove('active');
+            }
+        });
+    }
+
+    // Fonction pour passer au slide suivant
+    function nextSlide() {
+        currentIndex = (currentIndex + 1) % slideCount;
+        updateCarousel();
+    }
+
+    // Fonction pour passer au slide précédent
+    function prevSlide() {
+        currentIndex = (currentIndex - 1 + slideCount) % slideCount;
+        updateCarousel();
+    }
+
+    // Gestionnaires d'événements pour les boutons
+    nextBtn.addEventListener('click', nextSlide);
+    prevBtn.addEventListener('click', prevSlide);
+    
+    // Gestionnaires d'événements pour les indicateurs
+    indicators.forEach((dot, index) => {
+        dot.addEventListener('click', () => {
+            currentIndex = index;
+            updateCarousel();
+        });
+    });
+
+    // Activer le défilement automatique (optionnel)
+    // let autoplay = setInterval(nextSlide, 5000);
+    
+    // Pause lors du survol (optionnel)
+    // container.addEventListener('mouseenter', () => clearInterval(autoplay));
+    // container.addEventListener('mouseleave', () => autoplay = setInterval(nextSlide, 5000));
+
+    // Initialiser l'affichage
+    updateCarousel();
+
+    // Navigation tactile (swipe) pour mobile
+    let touchStartX = 0;
+    let touchEndX = 0;
+    
+    container.addEventListener('touchstart', (e) => {
+        touchStartX = e.changedTouches[0].screenX;
+    });
+    
+    container.addEventListener('touchend', (e) => {
+        touchEndX = e.changedTouches[0].screenX;
+        handleSwipe();
+    });
+    
+    function handleSwipe() {
+        if (touchEndX < touchStartX - 50) {
+            nextSlide();
+        }
+        if (touchEndX > touchStartX + 50) {
+            prevSlide();
+        }
+    }
+}
+
 // Exécuter au chargement
 document.addEventListener('DOMContentLoaded', handleArrows);
+document.addEventListener('DOMContentLoaded', initCarousel);
 
 // Exécuter à chaque redimensionnement de la fenêtre
 window.addEventListener('resize', handleArrows);
